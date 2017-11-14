@@ -1,0 +1,318 @@
+.burger-slider {
+	width: 100%;
+	height: 100vh;
+	min-height: rem(650px);
+	overflow: hidden;
+	background-color: #ed9439;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+}
+
+.burger-content {
+	display: flex;
+	padding-top: 10%;
+
+		@include tablets {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding-top: 10%;
+		}
+
+		@include phones {
+			padding-top: 33%;
+		}
+	}
+
+
+.burger__left-section {
+	width: 50%;
+	padding-right: rem(20px);
+}
+
+.burger__compound {
+	width: rem(90px);
+	height: rem(90px);
+	background-color: #f08c33;
+	border-radius: rem(8px);
+	cursor: pointer;
+	position: relative;
+	transition: .5s;
+	box-shadow: 3px 3px 10px rgba(0,0,0,.7);
+
+	&:hover {
+		transition: .3s;
+		background-color: #E25028;
+	}
+
+	@include tablets {
+		position: absolute;
+		left: rem(154px);
+		top: rem(10px);
+		margin-left: 3%;
+	}
+
+	@include phones {
+		position: absolute;
+		left: rem(10px);
+		top: 5.625rem;
+		margin-left: 3%;
+	}
+}
+
+.burger__list {
+	position: absolute;
+	width: rem(270px);
+	height: rem(332px);
+	background: #fff;
+	opacity: .9;
+	border-radius: rem(7px)s;
+	overflow: hidden;
+	top: 0;
+	left: -9999px;
+	opacity: 1;
+	padding: rem(20px);
+
+	&:after {
+		top: 0;
+		left: rem(90px);
+}
+}
+
+.burger__compound:hover .burger__list {
+	opacity: 1;
+	transition: 3s;
+}
+
+.burger__pic {
+	width: rem(38px);
+	height: rem(35px);
+	fill: #e25028;
+}
+
+.burger__name-item {
+	color: #3d3f40;
+	@include ubuntu();
+	font-size: rem(14px);
+	padding-right: rem(10px);
+}
+
+.burger__weight {
+	color: #3d3f40;
+	@include ubuntu();
+	font-size: rem(14px);
+}
+
+.burger__items {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-bottom: rem(17px);
+
+	&:last-child {
+		padding-bottom: 0;
+	}
+}
+
+.burger__pic-yellow {
+	fill: #f7b94a;
+}
+
+.burger__pic-salad {
+	fill: #8ac03e;
+}
+
+.burger__pic-cucumber {
+	fill: #8ac03e;
+}
+
+.burger__pic-cheese {
+	fill: #f7b94a;
+}
+
+// end of the drop-down menu
+
+.burger__svg {
+	width: rem(44px);
+	height: rem(42px);
+	fill: #fff;
+	transform: translate(50%, 35%);
+}
+
+.burger__text {
+	color: #fff;
+	@include gagalin();
+	font-size: rem(14px);
+	padding-top: rem(15px);
+	text-align: center;
+	letter-spacing: rem(1px);
+}
+
+.burger__svg-pic {
+	width: rem(60px);
+	height: rem(60px);
+	fill: #fff;
+	opacity: .5;
+}
+
+.burger__text-nutrition {
+	font-size: rem(14px);
+	@include gagalin();
+	opacity: 0.5;
+	color: #fff;
+	padding-left: rem(15px);
+}
+
+.burger__nutrition {
+	font-size: rem(20px);
+	@include gagalin();
+	opacity: .5;
+	color: #fff;
+	position: absolute;
+	transform: translate(42%, -140%);
+}
+
+.burger__img {
+	max-width: 100%;
+}
+
+.burger__right-section {
+	width: 50%;
+	
+	@include tablets {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.burger__title {
+	font-size: rem(72px);
+	@include gagalin();
+	color: #fff;
+	line-height: 1;
+	padding-bottom: rem(50px);
+
+	@include tablets {
+		padding-bottom: 0;
+		text-align: center;
+		font-size: rem(71px);
+	}
+
+	@include phones {
+		font-size: 3.4375rem;
+	}
+}
+
+.burger__desc p {
+	font-size: rem(14px);
+	color: #fff;
+	font-family: 'ubuntu', Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	padding-bottom: rem(40px);
+
+	@include tablets {
+		padding-bottom: 0;
+		text-align: center;
+		width: rem(696px);
+	}
+
+	@include phones {
+		width: rem(460px);
+	}
+}
+
+.burger__price {
+	display: flex;
+	align-items: baseline;
+
+	@include tablets {
+		line-height: 1.42;
+	}
+}
+
+.burger__revenue {
+	@include gagalin();
+	font-size: rem(72px);
+	color: #e35028;
+	padding-right: rem(10px);
+}
+
+.burger__ruble {
+	@include gagalin();
+	font-size: rem(30px);
+	color: #e35028;
+	padding-right: 30px;
+}
+
+.burger__link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 13px;
+	@include ubuntu();
+	padding: rem(10px) rem(10px);
+	background: #e35028;
+	width: rem(97px);
+	text-align: center;
+	border-radius: rem(7px);
+	transition: .5s;
+
+	&:hover {
+		background: darken(#e35028, 10%);
+		transition: .5s;
+	}
+}
+
+.burger__arrow-link {
+	display: block;
+}
+
+.burger__arrow-link {
+	fill: #fff;
+}
+
+.burger__arrow-left-img {
+	fill: #fff;
+	width: rem(25px);
+	height: rem(28px);
+	transform: rotate(90deg);
+	position: absolute;
+	top: 59%;
+	left: -40px;
+
+	@include tablets {
+		top: 50%;
+		left: rem(22px);
+	}
+}
+
+.burger__arrow-left-pic {
+	fill: #fff;
+	width: rem(25px);
+	height: rem(28px)s;
+	transform: rotate(-90deg);
+	position: absolute;
+	right: rem(-35px);
+	top: 59%;
+
+	@include tablets {
+		top: 50.99%;
+		right: rem(22px);
+	}
+}
+
+.burger__nutrition-value {
+	@include tablets {
+		position: absolute;
+		top: 0.6rem;
+		right: 8.34rem;
+	}
+
+	@include phones {
+		right: 1.34rem;
+		top: 5.6rem;
+	}
+}

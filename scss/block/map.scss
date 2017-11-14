@@ -1,0 +1,138 @@
+// section-map
+
+.map {
+	width: 100%;
+	height: 100vh;
+	min-height: rem(650px);
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.31);
+	background: url('../img/background/bg-map.png') center center no-repeat;
+	background-size: cover;
+}
+
+.footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	height: rem(58px);
+	width: 100%;
+	background-color: #0f0f0f;
+	@include ubuntu();
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include phones {
+		display: flex;
+		flex-direction: column;
+		// align-items: center;
+		justify-content: center;
+		height: rem(115px);
+	}
+}
+
+.footer__left {
+	width: 50%;
+	padding: rem(11px) 0 rem(11px);
+}
+
+.footer__right {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	@include phones {
+		justify-content: center;
+		padding-left: rem(35px);
+	}
+}
+
+.footer__address {
+	color: #fff;
+	font-size: rem(14px);
+	font-style: normal;
+	padding-bottom: rem(5px);
+
+	@include phones {
+		white-space: nowrap;
+	}
+}
+
+.footer__phone {
+	@include phones {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-left: rem(35px);
+	}
+}
+
+.footer__contacts {
+	color: #ab3e21;
+	font-size: rem(14px);
+	text-decoration: none;
+	font-weight: 900;
+	display: flex;
+	align-items: center;
+
+	&:before {
+		content: "";
+		background-image: url('../img/icons-svg/phone.svg');
+		background-repeat: no-repeat;
+		display: block;
+		width: rem(12px);
+		height: rem(12px);
+		margin-right: rem(8px);
+	}
+
+	@include tablets {
+		font-size: 14px;
+	}
+}
+
+.container__menu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+
+	@include tablets {
+		width: rem(720px);
+	}
+
+	@include phones {
+		width: rem(460px);
+		height: rem(115px);
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		margin-right: 0;
+		margin-left: 20px;
+	}
+
+}
+
+.social__link {
+	display: block;
+	width: rem(25px);
+	height: rem(25px);
+	fill: #5c5c5c;
+	margin-right: rem(20px);
+	cursor: pointer;
+	transition: all .3s;
+
+	&:hover {
+		fill: #ffffff;
+		transition: all .3s;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+
+
+
+
