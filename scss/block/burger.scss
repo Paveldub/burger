@@ -160,6 +160,7 @@
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
+		transform: translateY(30%);
 	}
 
 	@include phones {
@@ -174,7 +175,7 @@
 
 .burger__container {
 	display: flex;
-	// flex: 1;
+	flex: 1;
 
 	@include tablets {
 		flex-direction: column;
@@ -302,6 +303,14 @@
 	position: fixed;
 	top: 5.625rem;
 	right: 3.125rem;
+
+	@include tablets {
+		display: none;
+	}
+
+	@include phones {
+		display: none;
+	}
 }
 
 .fixed-menu__item {
@@ -311,8 +320,8 @@
 .fixed-menu__link {
 	position: relative;
 	display: block;
-	width: 16px;
-	height: 16px;
+	width: rem(16px);
+	height: rem(16px);
 
 	&:before {
 		position: absolute;
