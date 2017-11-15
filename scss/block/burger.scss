@@ -15,7 +15,15 @@
 	height: rem(83px);
 	display: flex;
 	align-items: center;
-	padding: rem(10px);
+
+	@include tablets {
+		justify-content: space-between;
+	}
+
+	@include phones {
+		justify-content: space-between;
+	}
+
 }
 
 .header__menu {
@@ -45,11 +53,12 @@
 
 .header__btn {
 	@include tablets {
-	margin-left: 32.625rem;
+		margin-left: auto;
+		margin-right: rem(30px);
 	}
 
 	@include phones {
-		margin-left: rem(250px);
+		margin-right: rem(30px);
 		}
 }
 
@@ -126,7 +135,6 @@
 	background: url('../img/content/hdr-burg.png') center center no-repeat;
 	display: none;
 	cursor: pointer;
-	margin-left: rem(20px);
 	width: rem(24px);
 	height: rem(24px);
 	
@@ -146,13 +154,12 @@
 .content {
 	display: flex;
 	align-items: center;
-	flex-grow: 1;
+	justify-content: center;
 
 	@include tablets {
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		margin-top: -30px;
 	}
 
 	@include phones {
@@ -160,13 +167,14 @@
 		align-items: center;
 		justify-content: center;
 		margin-top: -30px;
-		font-size: 63px;
+		font-size: rem(63px);
 	}
 
 }
 
 .burger__container {
-	flex: 1;
+	display: flex;
+	// flex: 1;
 
 	@include tablets {
 		flex-direction: column;
@@ -182,51 +190,45 @@
 }
 
 .content__burger {
-	width: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	@include tablets {
-	margin-top: -1.5rem;
-	margin-left: 50px;
+		width: 50%;
 	}
 
 	@include phones {
-		margin-top: 50px;
-		margin-right: 28px;
+		margin-top: rem(50px);
+		margin-right: rem(28px);
 	}
-
 }
 
-
 .content__text {
-	width: 50%;
-	margin-left: -0.0625rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 
 	@include tablets {
 		text-align: center;
-		transition: all 1s;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 	}
 
 	@include phones {
-		font-size: 63px;
+		font-size: rem(63px);
 	}
-
 }
 
 .section-title {
 	font-size: rem(72px);
 	color: $cyellow;
 	font-family: $gfont;
-	margin-bottom: rem(2px);
-	margin-left: rem(-1px);
-
 
 	@include tablets {
 		margin-bottom: 0;
 		white-space: nowrap;
-		padding-left: 37px;
 	}
 
 	@include phones {
@@ -242,11 +244,14 @@
 	color: $cwhite;
 	font-size: rem(65px);
 	line-height: .9;
-	margin-bottom: rem(89px);
+	padding-left: rem(44px);
 
 	@include tablets {
 		margin-bottom: 0;
-		padding-left: 20px;
+		flex-wrap: wrap;
+		display: flex;
+		width: rem(400px);
+		padding-left: 0;
 	}
 
 	@include phones {
@@ -261,22 +266,91 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: rem(40px);
+	padding-top: rem(100px);
+	transition: all .4s;
+	line-height: 2;
+
+	@include tablets {
+		padding-top: 0;
+		display: run-in;
+	}
+}
+
+.arrow__link-img {
+	width: rem(30px);
+	height: rem(15px);
+	fill: #fff;
 }
 
 .arrow__link {
+	transition: all .4s;
+	&:hover {
+		transform: scale(1.2);
+		transition: all .4s;
+	}
+
 	@include tablets {
 		display: flex;
-		padding-top: rem(150px);
 		justify-content: center;
 		align-items: center;
+		padding-top: rem(290px);
 	}
 
 }
 
+.fixed-menu { // ul - column
+	position: fixed;
+	top: 5.625rem;
+	right: 3.125rem;
+}
 
+.fixed-menu__item {
+	margin-bottom: rem(13px);
+}
 
+.fixed-menu__link {
+	position: relative;
+	display: block;
+	width: 16px;
+	height: 16px;
 
+	&:before {
+		position: absolute;
+		content: "";
+		width: rem(6px);
+		height: rem(6px);
+		border-radius: 50%;
+		background-color: #fff;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 
+	&:after {
+		position: absolute;
+		content: "";
+		border: rem(1px) solid #fff;
+		width: rem(16px);
+		height: rem(16px);
+		border-radius: 50%;
 
+	}
+}
 
+.fixed-menu__link {
+	&:after {
+		opacity: 0;
+		transition: all .4s;
+	}
+
+	&:hover:after {
+		opacity: 1;
+		transition: all .4s;
+	}
+}
+
+.fixed-menu__link--active {
+	&:after {
+		opacity: 1;
+	}
+}

@@ -30,7 +30,7 @@
 	bottom: 0;
 
 	@include tablets {
-		margin-right: rem(128px);
+		margin-right: 7.5rem;
 	}
 	@include phones {
 		margin-right: rem(390px);

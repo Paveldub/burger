@@ -16,6 +16,7 @@
 }
 
 .container {
+	width: 95%;
 	position: relative;
 	max-width: rem(940px);
 	margin: 0 auto;
@@ -28,6 +29,5 @@
 	background: #ccc;
 	min-width: rem(940px);
 	min-height: rem(650px);
-	transition: 1s;
 }
 
