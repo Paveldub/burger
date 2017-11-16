@@ -5,7 +5,7 @@
 	width: 95%;
 
 	@include tablets {
-		padding-top: 25%;
+		padding-top: 1%;
 	}
 }
 
@@ -31,9 +31,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: rem(50px) rem(50px) rem(90px) rem(50px);
 	font-size: rem(72px);
 	@include gagalin();
+	padding-top: rem(80px);
+	padding-bottom: rem(90px);
 
 	@include tablets {
 		display: flex;
@@ -44,7 +45,9 @@
 
 	@include phones {
 		white-space: nowrap;
-		padding-left: 80px;
+		justify-content: center;
+		align-items: center;
+		padding: rem(50px) 0 rem(70px) 0;
 	}
 }
 

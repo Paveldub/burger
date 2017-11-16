@@ -52,6 +52,7 @@
 }
 
 .header__btn {
+
 	@include tablets {
 		margin-left: auto;
 		margin-right: rem(30px);
@@ -153,6 +154,7 @@
 
 .content {
 	display: flex;
+	flex: 1;
 	align-items: center;
 	justify-content: center;
 
@@ -160,7 +162,6 @@
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		transform: translateY(30%);
 	}
 
 	@include phones {
@@ -199,11 +200,6 @@
 	@include tablets {
 		width: 50%;
 	}
-
-	@include phones {
-		margin-top: rem(50px);
-		margin-right: rem(28px);
-	}
 }
 
 .content__text {
@@ -215,6 +211,7 @@
 
 	@include tablets {
 		text-align: center;
+		padding-bottom: rem(230px);
 	}
 
 	@include phones {
@@ -253,6 +250,7 @@
 		display: flex;
 		width: rem(400px);
 		padding-left: 0;
+		padding-bottom: rem(50px);
 	}
 
 	@include phones {
@@ -267,13 +265,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-top: rem(100px);
 	transition: all .4s;
 	line-height: 2;
+	padding-bottom: rem(50px);
 
 	@include tablets {
-		padding-top: 0;
-		display: run-in;
 	}
 }
 
@@ -284,7 +280,7 @@
 }
 
 .arrow__link {
-	transition: all .4s;
+
 	&:hover {
 		transform: scale(1.2);
 		transition: all .4s;
@@ -294,7 +290,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding-top: rem(290px);
 	}
 
 }

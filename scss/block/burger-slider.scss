@@ -9,6 +9,12 @@
 	background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
 }
 
+.container-slider {
+	@include phones {
+		width: 95%;
+	}
+}
+
 .burger-content {
 	display: flex;
 	padding-top: 10%;
@@ -18,7 +24,7 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			padding-top: 40%;
+			transform: translateY(10%);
 		}
 
 		@include phones {
@@ -49,17 +55,14 @@
 
 	@include tablets {
 		position: absolute;
-		left: rem(154px);
-		top: rem(10px);
-		margin-left: 3%;
-		margin-top: 29%;
+		left: 18%;
+		top: 4%;
 	}
 
 	@include phones {
 		position: absolute;
-		left: rem(10px);
-		top: 5.625rem;
-		margin-left: 3%;
+		left: 5%;
+		top: 1%;
 	}
 }
 
@@ -308,13 +311,12 @@
 .burger__nutrition-value {
 	@include tablets {
 		position: absolute;
-		top: 0.6rem;
-		right: 8.34rem;
-		padding-top: 29%;
+		right: 25%;
+		top: 4%;
 	}
 
 	@include phones {
-		right: 1.34rem;
-		top: 5.6rem;
+		right: 5%;
+		top: 1%;
 	}
 }
