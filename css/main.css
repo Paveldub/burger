@@ -2257,11 +2257,19 @@ template {
   .form__input--overrided:last-child {
     display: none; } }
 
-@media screen and (max-width: 480px) {
-  input:focus {
-    border: 0.1875rem solid #f9b43b;
-    -webkit-box-shadow: 0.0625rem 0.0625rem 0.125rem 0 #f9b43b;
-            box-shadow: 0.0625rem 0.0625rem 0.125rem 0 #f9b43b; } }
+textarea:focus {
+  outline: none;
+  border: 0.125rem solid #f9b43b;
+  -webkit-box-shadow: 0.0625rem 0.0625rem 0.125rem 0 #f9b43b;
+          box-shadow: 0.0625rem 0.0625rem 0.125rem 0 #f9b43b;
+  padding-left: 0.625rem; }
+
+input:focus {
+  outline: none;
+  border: 0.125rem solid #f9b43b;
+  -webkit-box-shadow: 0.0625rem 0.0625rem 0.125rem 0 #f9b43b;
+          box-shadow: 0.0625rem 0.0625rem 0.125rem 0 #f9b43b;
+  padding-left: 0.625rem; }
 
 .form__input {
   width: 100%;
