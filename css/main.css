@@ -1855,6 +1855,14 @@ template {
   top: 0;
   left: 5.625rem;
   opacity: .9; }
+  @media screen and (max-width: 768px) {
+    .burger__compound:hover .burger__list {
+      top: 5.625rem;
+      left: -100%; } }
+  @media screen and (max-width: 480px) {
+    .burger__compound:hover .burger__list {
+      top: -70%;
+      left: 5.625rem; } }
 
 .burger__pic {
   width: 2.375rem;

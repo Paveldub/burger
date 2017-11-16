@@ -91,6 +91,16 @@
 	top: 0;
 	left: rem(90px);
 	opacity: .9;
+
+	@include tablets {
+		top: rem(90px);
+		left: -100%;
+	}
+
+	@include phones {
+		top: -70%;
+		left: rem(90px);
+	}
 }
 
 .burger__pic {
