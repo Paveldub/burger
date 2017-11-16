@@ -40,14 +40,12 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: rem(50px) rem(50px) rem(90px) 7.75rem;
 	}
 
 	@include phones {
 		white-space: nowrap;
 		justify-content: center;
 		align-items: center;
-		padding: rem(50px) 0 rem(70px) 0;
 	}
 }
 
@@ -77,12 +75,12 @@
 	@include phones {
 	display: flex;
 	margin-left: 0;
-	margin-bottom: 0;
+	margin-bottom: rem(30px);
 	}
 }
 
 .text__desc {
-	margin-bottom: 30px;
+	margin-bottom: rem(30px);
 }
 
 .items__img-hand {
@@ -101,7 +99,10 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-left: 0;
+	}
+
+	@include phones {
+		margin-bottom: 0;
 	}
 }
 
@@ -139,8 +140,6 @@
 	font-weight: 500;
 	font-family: 'Myriad Pro';
 	text-align: center;
-
-
 }
 
 

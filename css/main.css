@@ -1403,7 +1403,7 @@ template {
           -ms-flex-align: center;
               align-items: center;
       margin-right: 0;
-      margin-left: 20px; } }
+      margin-left: 1.25rem; } }
 
 .social__link {
   display: block;
@@ -1482,8 +1482,7 @@ template {
               justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      padding: 3.125rem 3.125rem 5.625rem 7.75rem; } }
+              align-items: center; } }
   @media screen and (max-width: 480px) {
     .best-title {
       white-space: nowrap;
@@ -1492,8 +1491,7 @@ template {
               justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      padding: 3.125rem 0 4.375rem 0; } }
+              align-items: center; } }
 
 .items {
   display: -webkit-box;
@@ -1537,10 +1535,10 @@ template {
     display: -ms-flexbox;
     display: flex;
     margin-left: 0;
-    margin-bottom: 0; } }
+    margin-bottom: 1.875rem; } }
 
 .text__desc {
-  margin-bottom: 30px; }
+  margin-bottom: 1.875rem; }
 
 @media screen and (max-width: 768px) {
   .items__img-hand {
@@ -1573,8 +1571,10 @@ template {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    margin-left: 0; } }
+            align-items: center; } }
+@media screen and (max-width: 480px) {
+  .items__img-leaf {
+    margin-bottom: 0; } }
 
 .items__list {
   width: 33%; }
@@ -1754,8 +1754,8 @@ template {
   background-color: #ed9439;
   background-repeat: no-repeat;
   background-size: cover;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(47%, #eb8c38), color-stop(73%, #f9b43b));
   background: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(47%, #eb8c38), color-stop(73%, #f9b43b));
   background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%); }
 
 @media screen and (max-width: 480px) {
@@ -2547,5 +2547,4 @@ template {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s; }
-
 /*# sourceMappingURL=main.css.map */
