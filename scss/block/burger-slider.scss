@@ -281,6 +281,10 @@
 		background: darken(#e35028, 10%);
 		transition: .5s;
 	}
+
+	@include iphone {
+		text-overflow: ellipsis;
+	}
 }
 
 .burger__arrow-link {

@@ -2037,6 +2037,10 @@ template {
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s; }
+  @media screen and (max-width: 320px) {
+    .burger__link {
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis; } }
 
 .burger__arrow-link {
   display: block; }
