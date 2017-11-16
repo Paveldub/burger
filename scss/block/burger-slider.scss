@@ -74,20 +74,20 @@
 	opacity: .9;
 	border-radius: rem(7px);
 	overflow: hidden;
-	// top: 0;
-	// left: -9999px;
+	top: 0;
+	left: -9999px;
 	opacity: 0;
 	padding: rem(20px);
 
-	&:after {
-		top: 0;
-		left: rem(90px);
-}
+// 	&:after {
+// 		top: 0;
+// 		left: rem(90px);
+// }
 }
 
 .burger__compound:hover .burger__list {
 	opacity: 1;
-	transition: .5s;
+	transition: .3s;
 	top: 0;
 	left: rem(90px);
 	opacity: .9;
