@@ -30,7 +30,13 @@ html {
 	@include phones {
 		font-size: 14px;
 	}
+
+	@include iphone {
+		font-size: 10px;
+	}
 }
+
+
 
 
 body, html {

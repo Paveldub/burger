@@ -22,6 +22,12 @@
 	}
 }
 
+@mixin iphone {
+	@media screen and (max-width: 320px) {
+		@content;
+	}
+}
+
 
 
 

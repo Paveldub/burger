@@ -60,6 +60,9 @@ html {
   @media screen and (max-width: 480px) {
     html {
       font-size: 14px; } }
+  @media screen and (max-width: 320px) {
+    html {
+      font-size: 10px; } }
 
 body, html {
   height: 100%; }
@@ -610,6 +613,11 @@ template {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
+  @media screen and (max-width: 320px) {
+    .header {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 
 .header__menu {
   display: -webkit-box;
@@ -627,13 +635,17 @@ template {
   display: block;
   margin-right: auto;
   margin-left: 0.0625rem;
-  margin-bottom: 0.0625rem; }
+  margin-bottom: 0.0625rem;
+  max-width: 100%; }
   @media screen and (max-width: 768px) {
     .header__img {
       margin-top: 0.625rem; } }
   @media screen and (max-width: 480px) {
     .header__img {
       margin-top: 0.625rem; } }
+  @media screen and (max-width: 320px) {
+    .header__img {
+      margin-top: 2.5rem; } }
 
 @media screen and (max-width: 768px) {
   .header__btn {
@@ -1829,9 +1841,7 @@ template {
   opacity: .9;
   border-radius: 0.4375rem s;
   overflow: hidden;
-  top: 0;
-  left: -9999px;
-  opacity: 1;
+  opacity: 0;
   padding: 1.25rem; }
   .burger__list:after {
     top: 0;
