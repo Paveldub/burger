@@ -72,7 +72,7 @@
 	height: rem(332px);
 	background: #fff;
 	opacity: .9;
-	border-radius: rem(7px)s;
+	border-radius: rem(7px);
 	overflow: hidden;
 	// top: 0;
 	// left: -9999px;
@@ -87,7 +87,10 @@
 
 .burger__compound:hover .burger__list {
 	opacity: 1;
-	transition: 3s;
+	transition: .5s;
+	top: 0;
+	left: rem(90px);
+	opacity: .9;
 }
 
 .burger__pic {

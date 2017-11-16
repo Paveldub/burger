@@ -1839,7 +1839,7 @@ template {
   height: 20.75rem;
   background: #fff;
   opacity: .9;
-  border-radius: 0.4375rem s;
+  border-radius: 0.4375rem;
   overflow: hidden;
   opacity: 0;
   padding: 1.25rem; }
@@ -1849,9 +1849,12 @@ template {
 
 .burger__compound:hover .burger__list {
   opacity: 1;
-  -webkit-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s; }
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  top: 0;
+  left: 5.625rem;
+  opacity: .9; }
 
 .burger__pic {
   width: 2.375rem;
