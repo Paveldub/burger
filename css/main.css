@@ -26,8 +26,8 @@
 
 .section {
   height: 100vh;
+  width: 100%;
   background: #ccc;
-  min-width: 58.75rem;
   min-height: 40.625rem; }
 
 body {
@@ -1754,8 +1754,8 @@ template {
   background-color: #ed9439;
   background-repeat: no-repeat;
   background-size: cover;
-  background: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
   background: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(47%, #eb8c38), color-stop(73%, #f9b43b));
+  background: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
   background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%); }
 
 @media screen and (max-width: 480px) {
@@ -2095,10 +2095,14 @@ template {
   bottom: 0; }
   @media screen and (max-width: 768px) {
     .variety-acco {
-      margin-right: 7.5rem; } }
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
   @media screen and (max-width: 480px) {
     .variety-acco {
-      margin-right: 24.375rem; } }
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
 
 .variety-acco__items {
   display: -webkit-box;
@@ -2547,4 +2551,5 @@ template {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s; }
+
 /*# sourceMappingURL=main.css.map */

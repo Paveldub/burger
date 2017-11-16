@@ -30,10 +30,10 @@
 	bottom: 0;
 
 	@include tablets {
-		margin-right: 7.5rem;
+		justify-content: flex-end;
 	}
 	@include phones {
-		margin-right: rem(390px);
+		justify-content: flex-end;
 	}
 
 }
