@@ -1288,9 +1288,6 @@ template {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.31); }
 
-.map__position {
-  overflow: hidden; }
-
 .footer {
   position: absolute;
   left: 0;
