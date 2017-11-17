@@ -1286,9 +1286,10 @@ template {
   height: 100vh;
   min-height: 40.625rem;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.31);
-  background: url("../img/background/bg-map.png") center center no-repeat;
-  background-size: cover; }
+  background-color: rgba(0, 0, 0, 0.31); }
+
+.map__position {
+  overflow: hidden; }
 
 .footer {
   position: absolute;
@@ -2210,7 +2211,8 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 4.5rem; }
+  padding-top: 4.5rem;
+  text-align: center; }
   @media screen and (max-width: 480px) {
     .order__title {
       text-align: center;

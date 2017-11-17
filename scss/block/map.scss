@@ -6,8 +6,10 @@
 	min-height: rem(650px);
 	overflow: hidden;
 	background-color: rgba(0,0,0,0.31);
-	background: url('../img/background/bg-map.png') center center no-repeat;
-	background-size: cover;
+}
+
+.map__position {
+	overflow: hidden;
 }
 
 .footer {
