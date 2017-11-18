@@ -207,6 +207,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-right: rem(15px);
 
 	@include tablets {
 		width: 50%;

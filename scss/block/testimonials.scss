@@ -66,7 +66,14 @@
 		padding-bottom: 0;
 	}
 	@include phones {
-		font-size: 17px;
+		font-size: rem(17px);
+		text-align: center;
+		margin-bottom: rem(20px);
+	}
+
+	@include iphone {
+		text-align: center;
+		margin-bottom: rem(10px);
 	}
 }
 
