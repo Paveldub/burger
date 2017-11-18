@@ -13,6 +13,10 @@
 	@include phones {
 		width: 95%;
 	}
+
+	@include tablets {
+		transform: translateY(-45%);
+	}
 }
 
 .burger-content {
@@ -24,11 +28,10 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			transform: translateY(50%);
 		}
 
 		@include phones {
-			transform: translateY(22%);
+			transform: translateY(64%);
 		}
 
 
@@ -315,7 +318,7 @@
 	}
 
 	@include phones {
-		top: 60%;
+		top: 99%;
 	}
 }
 
@@ -334,7 +337,7 @@
 	}
 
 	@include phones {
-		top: 60%;
+		top: 100%;
 	}
 }
 
