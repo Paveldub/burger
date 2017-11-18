@@ -24,18 +24,19 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			transform: translateY(10%);
+			transform: translateY(50%);
 		}
 
 		@include phones {
-			padding-top: 33%;
+			transform: translateY(22%);
 		}
+
+
 	}
 
 
 .burger__left-section {
 	width: 50%;
-	padding-right: rem(20px);
 }
 
 .burger__compound {
@@ -306,11 +307,15 @@
 	transform: rotate(90deg);
 	position: absolute;
 	top: 59%;
-	left: -40px;
+	left: rem(-40px);
 
 	@include tablets {
-		top: 50%;
+		top: 100%;
 		left: rem(22px);
+	}
+
+	@include phones {
+		top: 60%;
 	}
 }
 
@@ -324,8 +329,12 @@
 	top: 59%;
 
 	@include tablets {
-		top: 50.99%;
+		top: 100%;
 		right: rem(22px);
+	}
+
+	@include phones {
+		top: 60%;
 	}
 }
 

@@ -5,7 +5,11 @@
 	width: 95%;
 
 	@include tablets {
-		padding-top: 1%;
+		transform: translateY(45%);
+	}
+
+	@include phones {
+		transform: translateY(-5%);
 	}
 }
 

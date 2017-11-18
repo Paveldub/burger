@@ -19,12 +19,11 @@
 	
 	@include phones {
 		text-align: center;
-		padding-top: 0;
 		font-size: rem(50px);
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding-left: rem(30px);
+		padding-top: 0;
 	}
 	@include tablets {
 		padding-top: rem(33px);
@@ -33,11 +32,15 @@
 
 .container-order {
 	@include phones {
-		padding-top: rem(60px);
+		transform: translateY(-50%);
 	}
 
 	@include iphone {
 		transform: translateX(-3%);
+	}
+
+	@include tablets {
+		transform: translateY(30%);
 	}
 }
 

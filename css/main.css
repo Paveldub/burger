@@ -765,8 +765,10 @@ template {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin-top: -30px;
-      font-size: 3.9375rem; } }
+      font-size: 3.9375rem;
+      -webkit-transform: translateY(15%);
+          -ms-transform: translateY(15%);
+              transform: translateY(15%); } }
   @media screen and (max-width: 320px) {
     .content {
       -webkit-transform: translateY(15%);
@@ -1378,8 +1380,7 @@ template {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    width: 15.9375rem; } }
+            align-items: center; } }
 @media screen and (max-width: 320px) {
   .footer__phone {
     -webkit-box-align: center;
@@ -1412,7 +1413,10 @@ template {
     margin-right: 0.5rem; }
   @media screen and (max-width: 768px) {
     .footer__contacts {
-      font-size: 14px; } }
+      font-size: 0.875rem; } }
+  @media screen and (max-width: 480px) {
+    .footer__contacts {
+      font-size: 1rem; } }
   @media screen and (max-width: 320px) {
     .footer__contacts {
       width: 18.75rem;
@@ -1452,7 +1456,7 @@ template {
           -ms-flex-align: center;
               align-items: center;
       margin-right: 0;
-      margin-left: 1.25rem; } }
+      width: 100%; } }
   @media screen and (max-width: 320px) {
     .container__menu {
       -webkit-box-pack: center;
@@ -1493,7 +1497,14 @@ template {
   width: 95%; }
   @media screen and (max-width: 768px) {
     .container-overrided {
-      padding-top: 1%; } }
+      -webkit-transform: translateY(45%);
+          -ms-transform: translateY(45%);
+              transform: translateY(45%); } }
+  @media screen and (max-width: 480px) {
+    .container-overrided {
+      -webkit-transform: translateY(-5%);
+          -ms-transform: translateY(-5%);
+              transform: translateY(-5%); } }
 
 .wearebest {
   background-image: url("../img/background/bg-tomato.png");
@@ -1841,16 +1852,17 @@ template {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      -webkit-transform: translateY(10%);
-          -ms-transform: translateY(10%);
-              transform: translateY(10%); } }
+      -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+              transform: translateY(50%); } }
   @media screen and (max-width: 480px) {
     .burger-content {
-      padding-top: 33%; } }
+      -webkit-transform: translateY(22%);
+          -ms-transform: translateY(22%);
+              transform: translateY(22%); } }
 
 .burger__left-section {
-  width: 50%;
-  padding-right: 1.25rem; }
+  width: 50%; }
 
 .burger__compound {
   width: 5.625rem;
@@ -2106,11 +2118,14 @@ template {
           transform: rotate(90deg);
   position: absolute;
   top: 59%;
-  left: -40px; }
+  left: -2.5rem; }
   @media screen and (max-width: 768px) {
     .burger__arrow-left-img {
-      top: 50%;
+      top: 100%;
       left: 1.375rem; } }
+  @media screen and (max-width: 480px) {
+    .burger__arrow-left-img {
+      top: 60%; } }
 
 .burger__arrow-left-pic {
   fill: #fff;
@@ -2124,8 +2139,11 @@ template {
   top: 59%; }
   @media screen and (max-width: 768px) {
     .burger__arrow-left-pic {
-      top: 50.99%;
+      top: 100%;
       right: 1.375rem; } }
+  @media screen and (max-width: 480px) {
+    .burger__arrow-left-pic {
+      top: 60%; } }
 
 @media screen and (max-width: 768px) {
   .burger__nutrition-value {
@@ -2265,7 +2283,6 @@ template {
   @media screen and (max-width: 480px) {
     .order__title {
       text-align: center;
-      padding-top: 0;
       font-size: 3.125rem;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2276,19 +2293,26 @@ template {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      padding-left: 1.875rem; } }
+      padding-top: 0; } }
   @media screen and (max-width: 768px) {
     .order__title {
       padding-top: 2.0625rem; } }
 
 @media screen and (max-width: 480px) {
   .container-order {
-    padding-top: 3.75rem; } }
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); } }
 @media screen and (max-width: 320px) {
   .container-order {
     -webkit-transform: translateX(-3%);
         -ms-transform: translateX(-3%);
             transform: translateX(-3%); } }
+@media screen and (max-width: 768px) {
+  .container-order {
+    -webkit-transform: translateY(30%);
+        -ms-transform: translateY(30%);
+            transform: translateY(30%); } }
 
 .form__title {
   color: #fff;
