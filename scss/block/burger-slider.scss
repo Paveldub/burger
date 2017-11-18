@@ -7,7 +7,19 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+	display: flex;
+	align-items: center;
 }
+
+.content {
+	@include tablets {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	}
+}
+
 
 .container-slider {
 	@include phones {
@@ -15,13 +27,12 @@
 	}
 
 	@include tablets {
-		transform: translateY(-45%);
+
 	}
 }
 
 .burger-content {
 	display: flex;
-	padding-top: 10%;
 
 		@include tablets {
 			display: flex;
@@ -31,15 +42,15 @@
 		}
 
 		@include phones {
-			transform: translateY(64%);
+		
 		}
 
 
 	}
 
-
-.burger__left-section {
-	width: 50%;
+.burger__black-star {
+	width: rem(460px);
+	height: rem(320px);
 }
 
 .burger__compound {
@@ -59,14 +70,14 @@
 
 	@include tablets {
 		position: absolute;
-		left: 18%;
-		top: 4%;
+		left: 0;
+		top: 0;
 	}
 
 	@include phones {
 		position: absolute;
-		left: 5%;
-		top: 1%;
+		left: 0;
+		top: 50%;
 	}
 }
 
@@ -83,22 +94,22 @@
 	opacity: 0;
 	padding: rem(20px);
 
-// 	&:after {
-// 		top: 0;
-// 		left: rem(90px);
-// }
+	&:after {
+		top: 0;
+		left: rem(90px);
+}
 }
 
 .burger__compound:hover .burger__list {
 	opacity: 1;
 	transition: .3s;
-	top: 0;
-	left: rem(90px);
-	opacity: .9;
+	// top: 0;
+	// left: rem(90px);
+	// opacity: .9;
 
 	@include tablets {
-		top: rem(90px);
-		left: -100%;
+		top: 0;
+		left: rem(90px);
 	}
 
 	@include phones {
@@ -159,16 +170,15 @@
 	width: rem(44px);
 	height: rem(42px);
 	fill: #fff;
-	transform: translate(50%, 35%);
 }
 
 .burger__text {
 	color: #fff;
 	@include gagalin();
 	font-size: rem(14px);
-	padding-top: rem(15px);
 	text-align: center;
 	letter-spacing: rem(1px);
+	padding-top: rem(10px);
 }
 
 .burger__svg-pic {
@@ -183,7 +193,9 @@
 	@include gagalin();
 	opacity: 0.5;
 	color: #fff;
-	padding-left: rem(15px);
+	display: flex;
+	justify-content: center;
+	width: rem(60px);
 }
 
 .burger__nutrition {
@@ -192,7 +204,14 @@
 	opacity: .5;
 	color: #fff;
 	position: absolute;
-	transform: translate(42%, -140%);
+	top: 86%;
+	left: 1.5%;
+
+
+	@include tablets {
+		top: 32%;
+		left: 22%;
+	}
 }
 
 .burger__img {
@@ -200,8 +219,9 @@
 }
 
 .burger__right-section {
-	width: 50%;
-	
+	display: flex;
+	flex-direction: column;
+
 	@include tablets {
 		display: flex;
 		flex-direction: column;
@@ -232,7 +252,7 @@
 	color: #fff;
 	font-family: 'ubuntu', Arial, Helvetica, sans-serif;
 	font-weight: 100;
-	padding-bottom: rem(40px);
+	padding-bottom: rem(35px);
 
 	@include tablets {
 		padding-bottom: 0;
@@ -322,6 +342,11 @@
 	}
 }
 
+.burger__arrow-left {
+	width: rem(15px);
+	height: rem(15px);
+}
+
 .burger__arrow-left-pic {
 	fill: #fff;
 	width: rem(25px);
@@ -341,15 +366,37 @@
 	}
 }
 
+.burger__compound {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	@include phones {
+		top: 0;
+		left: 0;
+	}
+
+	@include iphone {
+		top: -3.1875rem;
+		left: 0;
+	}
+}
+
 .burger__nutrition-value {
 	@include tablets {
 		position: absolute;
-		right: 25%;
-		top: 4%;
+		top: 0;
+		right: 0;
 	}
 
 	@include phones {
 		right: 5%;
 		top: 1%;
 	}
+	@include iphone {
+		right: 0;
+		top: rem(-35px);
+	}
+
 }

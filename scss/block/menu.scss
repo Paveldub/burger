@@ -15,8 +15,8 @@
 	@include gagalin();
 	color: #fff;
 	position: absolute;
-	padding-top: rem(87px);
-	padding-left: rem(110px);
+	left: 5%;
+	top: 5%;
 
 	@include phones {
 		padding-left: 3.875rem;}
