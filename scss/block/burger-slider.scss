@@ -285,6 +285,10 @@
 	@include iphone {
 		text-overflow: ellipsis;
 	}
+
+	@include iphone {
+		width: 80px;
+	}
 }
 
 .burger__arrow-link {

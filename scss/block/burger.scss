@@ -180,6 +180,10 @@
 		font-size: rem(63px);
 	}
 
+	@include iphone {
+		transform: translateY(15%);
+	}
+
 }
 
 .burger__container {

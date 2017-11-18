@@ -767,6 +767,11 @@ template {
               justify-content: center;
       margin-top: -30px;
       font-size: 3.9375rem; } }
+  @media screen and (max-width: 320px) {
+    .content {
+      -webkit-transform: translateY(15%);
+          -ms-transform: translateY(15%);
+              transform: translateY(15%); } }
 
 .burger__container {
   display: -webkit-box;
@@ -1334,16 +1339,34 @@ template {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
+      width: 15.9375rem;
+      justify-content: center; } }
+
+.social__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media screen and (max-width: 320px) {
+    .social__buttons {
       padding-left: 2.1875rem; } }
 
 .footer__address {
   color: #fff;
   font-size: 0.875rem;
-  font-style: normal;
-  padding-bottom: 0.3125rem; }
+  font-style: normal; }
   @media screen and (max-width: 480px) {
     .footer__address {
-      white-space: nowrap; } }
+      white-space: nowrap;
+      width: 18.75rem; } }
+  @media screen and (max-width: 320px) {
+    .footer__address {
+      font-size: 0.875rem; } }
 
 @media screen and (max-width: 480px) {
   .footer__phone {
@@ -1356,7 +1379,17 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 2.1875rem; } }
+    width: 15.9375rem; } }
+@media screen and (max-width: 320px) {
+  .footer__phone {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 18.75rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.3125rem 0 0.3125rem 0; } }
 
 .footer__contacts {
   color: #ab3e21;
@@ -1380,6 +1413,12 @@ template {
   @media screen and (max-width: 768px) {
     .footer__contacts {
       font-size: 14px; } }
+  @media screen and (max-width: 320px) {
+    .footer__contacts {
+      width: 18.75rem;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .container__menu {
   display: -webkit-box;
@@ -1414,6 +1453,16 @@ template {
               align-items: center;
       margin-right: 0;
       margin-left: 1.25rem; } }
+  @media screen and (max-width: 320px) {
+    .container__menu {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-left: 0;
+      width: 95%; } }
 
 .social__link {
   display: block;
@@ -2038,6 +2087,9 @@ template {
     .burger__link {
       -o-text-overflow: ellipsis;
          text-overflow: ellipsis; } }
+  @media screen and (max-width: 320px) {
+    .burger__link {
+      width: 80px; } }
 
 .burger__arrow-link {
   display: block; }
@@ -2232,6 +2284,11 @@ template {
 @media screen and (max-width: 480px) {
   .container-order {
     padding-top: 3.75rem; } }
+@media screen and (max-width: 320px) {
+  .container-order {
+    -webkit-transform: translateX(-3%);
+        -ms-transform: translateX(-3%);
+            transform: translateX(-3%); } }
 
 .form__title {
   color: #fff;
@@ -2330,6 +2387,9 @@ input:focus {
     .form__textarea {
       width: 98%;
       margin-bottom: 3rem; } }
+  @media screen and (max-width: 320px) {
+    .form__textarea {
+      width: 97.5%; } }
 
 .form__class {
   display: -webkit-box;
@@ -2479,6 +2539,10 @@ input:focus {
           -ms-flex-pack: center;
               justify-content: center;
       margin-bottom: 1.25rem; } }
+  @media screen and (max-width: 320px) {
+    .form__buttons {
+      padding-top: 2.5rem;
+      padding-right: 1.0625rem; } }
 
 .form__radio-title {
   color: #fff; }
@@ -2576,6 +2640,10 @@ input:focus {
     .form__img:after {
       left: 0.1rem;
       top: 0.18rem; } }
+  @media screen and (max-width: 320px) {
+    .form__img:after {
+      left: 0.01rem;
+      top: 0.02rem; } }
 
 .form__checkbox-button:checked + .form__img:after {
   opacity: 1;

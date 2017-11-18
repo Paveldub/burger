@@ -42,6 +42,17 @@
 
 	@include phones {
 		justify-content: center;
+		width: rem(255px);
+		justify-content: center;
+	}
+}
+
+.social__buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include iphone {
 		padding-left: rem(35px);
 	}
 }
@@ -50,10 +61,14 @@
 	color: #fff;
 	font-size: rem(14px);
 	font-style: normal;
-	padding-bottom: rem(5px);
 
 	@include phones {
 		white-space: nowrap;
+		width: rem(300px);
+	}
+
+	@include iphone {
+		font-size: rem(14px);
 	}
 }
 
@@ -62,7 +77,14 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding-left: rem(35px);
+		width: rem(255px);
+	}
+
+	@include iphone {
+		align-items: center;
+		width: rem(300px);
+		justify-content: center;
+		padding: rem(5px) 0 rem(5px) 0;
 	}
 }
 
@@ -87,6 +109,11 @@
 	@include tablets {
 		font-size: 14px;
 	}
+
+	@include iphone {
+		width: rem(300px);
+		justify-content: center;
+	}
 }
 
 .container__menu {
@@ -107,6 +134,13 @@
 		align-items: center;
 		margin-right: 0;
 		margin-left: rem(20px);
+	}
+
+	@include iphone {
+		justify-content: center;
+		align-items: center;
+		margin-left: 0;
+		width: 95%;
 	}
 
 }
