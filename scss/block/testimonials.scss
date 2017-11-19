@@ -37,7 +37,7 @@
 	left: 0;
 	background: rgba(#454545, .5);
 	opacity: 0;
-	transition: all .5s;
+	transition: .5s;
 	padding: rem(50px) rem(40px);
 	color: #fff;
 	display: flex;
@@ -46,7 +46,7 @@
 	align-items: center;
 	&:hover {
 		opacity: 1;
-		transition: all .5s all 0.5s cubic-bezier(0.25, 0.1, 0.56, 0.37);
+		transition: .5s cubic-bezier(0.25, 0.1, 0.56, 0.37);
 		border: rem(1px) solid #454545;
 	}
 	@include tablets {

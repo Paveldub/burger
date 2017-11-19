@@ -61,11 +61,11 @@
 	border-radius: rem(8px);
 	cursor: pointer;
 	position: relative;
-	transition: .5s;
 	box-shadow: 3px 3px 10px rgba(0,0,0,.7);
+	transition: .6s;
 
 	&:hover {
-		transition: .3s;
+		transition: .6s;
 		background-color: #E25028;
 	}
 
@@ -83,39 +83,39 @@
 }
 
 .burger__list {
-	position: absolute;
 	width: rem(270px);
-	height: rem(332px);
-	background: #fff;
-	opacity: .9;
-	border-radius: rem(7px);
-	overflow: hidden;
-	top: 0;
-	left: -9999px;
-	opacity: 0;
+	height: rem(330px);
+	background: rgba(255, 255, 255, .9);
+	position: absolute;
 	padding: rem(20px);
-
-	&:after {
-		top: 0;
-		left: rem(90px);
-}
+	border-radius: 6px;
+	top: 0;
+	left: rem(-9999px);
+	opacity: 0;
+	transition: opacity .6s; 
 }
 
 .burger__compound:hover .burger__list {
+	top: 0;
+	left: rem(90px);
 	opacity: 1;
-	transition: .3s;
-	// top: 0;
-	// left: rem(90px);
-	// opacity: .9;
+}
 
-	@include tablets {
-		top: 0;
-		left: rem(90px);
-	}
+.burger__link {
+	min-width: rem(98px);
+	padding: rem(10px) rem(15px);
+	border-radius: rem(5px);
+	background-color: $corange;
+	text-decoration: none;
+	color: $cwhite;
+	font-size: rem(13px);
+	text-transform: uppercase;
+	transition: .6s;
+	font-weight: 500;
+	display: inline-block;
 
-	@include phones {
-		top: -70%;
-		left: rem(90px);
+	&:hover {
+		background: darken($corange, 7%);
 	}
 }
 
@@ -129,7 +129,6 @@
 	color: #3d3f40;
 	@include ubuntu();
 	font-size: rem(14px);
-	padding-right: rem(10px);
 }
 
 .burger__weight {
@@ -284,32 +283,6 @@
 	padding-right: 30px;
 }
 
-.burger__link {
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 13px;
-	@include ubuntu();
-	padding: rem(10px) rem(10px);
-	background: #e35028;
-	width: rem(97px);
-	text-align: center;
-	border-radius: rem(7px);
-	transition: .5s;
-
-	&:hover {
-		background: darken(#e35028, 10%);
-		transition: .5s;
-	}
-
-	@include iphone {
-		text-overflow: ellipsis;
-	}
-
-	@include iphone {
-		width: 80px;
-	}
-}
 
 .burger__arrow-link {
 	display: block;

@@ -335,7 +335,7 @@ textarea:focus {
 	opacity: 0;
 	@include tablets {
 		top: 0.22em;
-		left: 0.245em;
+		left: 0.249em;
 	}
 	@include phones {
 		top: 0.3em;
@@ -345,7 +345,7 @@ textarea:focus {
 
 .form__type-radio:checked+.form__radio-img:after {
 	opacity: 1;
-	transition: all .3s;
+	transition: .5s;
 }
 
 .input__type-radio {
