@@ -9,7 +9,6 @@
 	background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
 	display: flex;
 	align-items: center;
-	position: relative;
 }
 
 .content {
@@ -24,12 +23,9 @@
 
 .container-slider {
 	flex: 1;
+	position: relative;
 	@include phones {
 		width: 95%;
-	}
-
-	@include tablets {
-
 	}
 }
 
@@ -281,8 +277,10 @@
 	@include gagalin();
 	font-size: rem(30px);
 	color: #e35028;
-	padding-right: 30px;
+	padding-right: rem(30px);
 }
+
+// arrows-start
 
 .burger__arrow-left {
 	position: absolute;
@@ -292,6 +290,11 @@
 	left: -5%;
 	transform: rotate(90deg);
 	fill: #fff;
+
+	@include tablets {
+		top: 50%;
+		left: 10%;
+	}
 }
 
 .burger__arrow-right {
@@ -302,7 +305,14 @@
 	right: -5%;
 	transform: rotate(-90deg);
 	fill: #fff;
+
+	@include tablets {
+		top: 50%;
+		right: 10%;
+	}
 }
+
+// arrows-end
 
 .burger__compound {
 	display: flex;
