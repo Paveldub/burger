@@ -171,6 +171,7 @@ textarea:focus {
 	}
 	@include iphone {
 		width: 96%;
+		overflow-x: hidden;
 	}
 }
 

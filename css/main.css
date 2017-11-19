@@ -2504,7 +2504,8 @@ input:focus {
       margin-bottom: 0; } }
   @media screen and (max-width: 320px) {
     .form__textarea-field {
-      width: 96%; } }
+      width: 96%;
+      overflow-x: hidden; } }
 
 .form__class {
   display: -webkit-box;
