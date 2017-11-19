@@ -22,28 +22,34 @@
 
 	@include tablets {
 		margin-bottom: 0;
+		text-align: center;
 	}
 	@include phones {
 		font-size: rem(50px);
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		margin-bottom: 2rem;
+		text-align: center;
 	}
 
 	@include iphone {
 		text-align: center;
-		justify-content: center;
-		align-items: center;
 		width: 50%;
 	}
+
+	@include iphone6 {
+		text-align: center;
+		font-size: rem(55px);
+	}
+	@include iphone520 {
+		text-align: center;
+	}
+
+
 }
 
 .container-order {
 	@include iphone {
 		align-items: center;
 	}
-
 }
 
 .form__title {
@@ -85,14 +91,6 @@
 }
 
 
-.form__input--overrided {
-	@include phones {
-		&:last-child {
-			display: none;
-		}
-	}
-}
-
 textarea:focus {
 	outline: none;
 	border: rem(2px) solid #f9b43b;
@@ -116,6 +114,12 @@ input:focus {
 .form__input {
 	margin-right: rem(20px);
 	width: 100%;
+
+	@include tablets {
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 }
 
 .form__input-field {
@@ -135,6 +139,10 @@ input:focus {
 .form__left {
 	width: 50%;
 	@include phones {
+		width: 100%;
+	}
+
+	@include tablets {
 		width: 100%;
 	}
 }
@@ -163,14 +171,16 @@ textarea:focus {
 	resize: none;
 	border-radius: rem(6px);
 	@include tablets {
-		width: 96%;
+		width: 100%;
+		overflow-x: hidden;
 	}
 	@include phones {
-		width: 96%;
+		width: 100%;
 		margin-bottom: 0;
+		overflow-x: hidden;
 	}
 	@include iphone {
-		width: 96%;
+		width: 100%;
 		overflow-x: hidden;
 	}
 }
@@ -183,10 +193,10 @@ textarea:focus {
 
 .form__right {
 	width: 50%;
-	margin-left: rem(20px);
 
 	@include tablets {
 		margin-left: 0;
+		width: 100%;
 	}
 	@include phones {
 		width: 100%;
@@ -305,6 +315,8 @@ textarea:focus {
 	background-color: #fff;
 	position: relative;
 	margin-right: rem(10px);
+	flex-shrink: 0;
+
 	@include phones {
 		width: 1.1rem;
 		height: 1.1rem;
@@ -370,7 +382,11 @@ textarea:focus {
 
 .form__input-phone {
 	@include phones {
-		padding-left: 20px;
+		padding-left: rem(20px);
+	}
+
+	@include tablets {
+		padding-left: 0;
 	}
 }
 

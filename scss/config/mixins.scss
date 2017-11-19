@@ -28,6 +28,18 @@
 	}
 }
 
+@mixin iphone6 {
+	@media screen and (max-width: 675px) {
+		@content;
+	}
+}
+
+@mixin iphone520 {
+	@media screen and (max-width: 520px) {
+		@content;
+	}
+}
+
 
 
 
