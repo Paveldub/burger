@@ -9,6 +9,7 @@
 	background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 
 .content {
@@ -204,7 +205,7 @@
 	opacity: .5;
 	color: #fff;
 	position: absolute;
-	top: 86%;
+	top: 88%;
 	left: 1.5%;
 
 
@@ -283,56 +284,24 @@
 	padding-right: 30px;
 }
 
-
-.burger__arrow-link {
-	display: block;
-}
-
-.burger__arrow-link {
-	fill: #fff;
-}
-
-.burger__arrow-left-img {
-	fill: #fff;
-	width: rem(25px);
-	height: rem(28px);
-	transform: rotate(90deg);
-	position: absolute;
-	top: 59%;
-	left: rem(-40px);
-
-	@include tablets {
-		top: 100%;
-		left: rem(22px);
-	}
-
-	@include phones {
-		top: 99%;
-	}
-}
-
 .burger__arrow-left {
-	width: rem(15px);
+	position: absolute;
+	width: rem(35px);
 	height: rem(15px);
+	top: 50%;
+	left: -5%;
+	transform: rotate(90deg);
+	fill: #fff;
 }
 
-.burger__arrow-left-pic {
-	fill: #fff;
-	width: rem(25px);
-	height: rem(28px)s;
-	transform: rotate(-90deg);
+.burger__arrow-right {
 	position: absolute;
-	right: rem(-35px);
-	top: 59%;
-
-	@include tablets {
-		top: 100%;
-		right: rem(22px);
-	}
-
-	@include phones {
-		top: 100%;
-	}
+	width: rem(35px);
+	height: rem(15px);
+	top: 50%;
+	right: -5%;
+	transform: rotate(-90deg);
+	fill: #fff;
 }
 
 .burger__compound {
