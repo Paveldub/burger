@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.js">
   <script src="./js/svg4everybody.js"></script>
   <script>
@@ -23,7 +22,7 @@
         <div class="container burger__container">
           <header class="header">
             <div class="header__logo">
-              <img src="img/icons-svg/logo.svg" class="header__img">
+              <img src="img/icons-svg/logo.svg" alt="logo-img" class="header__img">
             </div>
             <div class="header__menu">
               <nav class="nav">
@@ -71,9 +70,9 @@
           </div>
           <div class="arrow">
             <a href="#" class="arrow__link">
-              <svg class="arrow__link-img" viewBox="0 0 28.685 14.479">
-                <use xlink:href="./img/icons-svg/sprite svg/sprite.svg#arrow__left" />
-              </svg>
+                <svg class="arrow__link-img" viewBox="0 0 28.685 14.479">
+                      <use xlink:href="./img/icons-svg/sprite svg/sprite.svg#arrow__left" />
+                </svg>
             </a>
           </div>
         </div>
@@ -81,14 +80,14 @@
 
       <section class="wearebest">
         <div class="container container-overrided">
-          <h2 class="best-title">
+          <div class="best-title">
             Мы лучшие
-          </h2>
+          </div>
           <ul class="items">
             <li class="items__list">
               <div class="item__svg-img">
                 <svg class="items__img" viewBox="0 0 96.428 89.246">
-                  <use xlink:href="./img/icons-svg/sprite svg/sprite.svg#meat">
+                  <use xlink:href="./img/icons-svg/sprite svg/sprite.svg#meat" alt="meat-img">
                 </svg>
               </div>
               <div class="text__desc">
@@ -104,7 +103,7 @@
               <li class="items__list">
                 <div class="item__svg-img">
                   <svg class="items__img-hand" viewBox="0 0 73 85.875">
-                    <use xlink:href="./img/icons-svg/sprite svg/sprite.svg#hand">
+                    <use xlink:href="./img/icons-svg/sprite svg/sprite.svg#hand" alt="hand-img">
                   </svg>
                 </div>
                 <div class="text__desc">
@@ -121,7 +120,7 @@
                 <li class="items__list">
                   <div class="item__svg-img">
                     <svg class="items__img-leaf" viewBox="0 0 88 75.534">
-                      <use xlink:href="./img/icons-svg/sprite svg/sprite.svg#leaf">
+                      <use xlink:href="./img/icons-svg/sprite svg/sprite.svg#leaf" alt="leaf-img">
                     </svg>
                   </div>
                   <div class="text__desc">
@@ -152,7 +151,7 @@
                 <div class="burger__drop-down">
                   <ul class="burger__list">
                     <li class="burger__items">
-                      <svg class="burger__pic viewBox="0 0 44 39.212" >
+                      <svg class="burger__pic" viewBox="0 0 44 39.212">
                         <use xlink:href="./img/icons-svg/sprite svg/sprite.svg#beef" />
                       </svg>
                       <div class="burger__name-item">
@@ -259,21 +258,22 @@
             </div>
           </div>
           <div class="burger__arrow">
-            <div class="burger__arrow-left">
-              <svg class="burger__arrow-left-img" viewBox="0 0 28.685 14.479">
-                <a href="#" class="burger__arrow-link">
-                  <use xlink:href="./img/icons-svg/sprite svg/sprite.svg#arrow__left" />
-                </a>
-              </svg>
+              <div class="burger__arrow-left">
+                <svg class="burger__arrow-left-img" viewBox="0 0 28.685 14.479">
+                  <a href="#" class="burger__arrow-link">
+                    <use xlink:href="./img/icons-svg/sprite svg/sprite.svg#arrow__left" />
+                  </a>
+                </svg>
+              </div>
+              <div class="burger__arrow-right">
+                <svg class="burger__arrow-left-pic" viewBox="0 0 28.685 14.479">
+                  <a href="#" class="burger__arrow-link">
+                    <use xlink:href="./img/icons-svg/sprite svg/sprite.svg#arrow__left" />
+                  </a>
+                </svg>
+              </div>
             </div>
-            <div class="burger__arrow-right">
-              <svg class="burger__arrow-left-pic" viewBox="0 0 28.685 14.479">
-                <a href="#" class="burger__arrow-link">
-                  <use xlink:href="./img/icons-svg/sprite svg/sprite.svg#arrow__left" />
-                </a>
-              </svg>
-            </div>
-          </div>
+        </div>
         </div>
       </section>
 
@@ -544,7 +544,7 @@
       </section>
 
       <section class="order">
-        <div class="container container-order">
+        <div class="container">
           <div class="order__title">
             закажите доставку
           </div>
@@ -552,37 +552,37 @@
             <div class="container container__change">
               <div class="form__left">
                 <div class="form__element">
-                  <label class="form__label">
+                  <label class="form__input">
                     <div class="form__title">Имя</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input-field">
                   </label>
-                  <label class="form__label">
+                  <label class="form__input">
                     <div class="form__title">Телефон</div>
-                    <input type="text" class="form__input form__input-phone">
+                    <input input-padding type="text" class="form__input-field form__input-phone">
                   </label>
                 </div>
                 <div class="form__element">
-                  <label class="form__label">
+                  <label class="form__input">
                     <div class="form__title">Улица</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input-field">
                   </label>
                 </div>
                 <div class="form__element">
                   <label class="form__input">
                     <div class="form__title">Дом</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input-field">
                   </label>
                   <label class="form__input">
                     <div class="form__title">Корпус</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input-field">
                   </label>
                   <label class="form__input">
                     <div class="form__title">Квартира</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input-field">
                   </label>
                   <label class="form__input form__input--overrided">
                     <div class="form__title">Этаж</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input-field">
                   </label>
                 </div>
               </div>
@@ -591,7 +591,7 @@
                   <div class="form__textarea-title">
                     Комментарий
                   </div>
-                  <textarea name="" class="form__textarea"></textarea>
+                  <textarea name="" class="form__textarea-field"></textarea>
                 </div>
                 <div class="form__buttons">
                   <label class="form__radio">
@@ -627,15 +627,12 @@
       </section>
 
       <section class="map">
-        <div class="map__position">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255987.66337487445!2d30.044196411481504!3d59.91714687437517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2sSt+Petersburg%2C+Russia!5e0!3m2!1sen!2sby!4v1510916430698" width="100%" height="645" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>     
-        <footer class="footer">
+        <footer class="footer" style="background-image: url('./img/content/footer.png')">
           <div class="container container__menu">
             <div class="footer__left">
               <address class="footer__address">
                 Санкт-Петербург, ул.Бабушкина, д.12/1, 15
-              </address> 
+              </address>
               <div class="footer__phone">
                 <a href="tel:+78123771377" class="footer__contacts">+7 (812) 377-13-77</a>
               </div>
@@ -671,32 +668,31 @@
           </div>
         </footer>
       </section>
-    </div>
 
       <ul class="fixed-menu">
         <li class="fixed-menu__item">
           <a href="#" class="fixed-menu__link fixed-menu__link--active"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__link"></a>
+            <a href="#" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__link"></a>
+            <a href="#" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__link"></a>
+            <a href="#" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__link"></a>
+            <a href="#" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__link"></a>
+            <a href="#" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__link"></a>
+            <a href="#" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="#" class="fixed-menu__link"></a>
+            <a href="#" class="fixed-menu__link"></a>
         </li>
       </ul>
     </div>

@@ -3,10 +3,6 @@
 	display: flex;
 	flex-direction: column;
 	width: 95%;
-
-	@include phones {
-		transform: translateY(-5%);
-	}
 }
 
 .wearebest {

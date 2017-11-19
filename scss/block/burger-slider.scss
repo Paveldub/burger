@@ -22,6 +22,7 @@
 
 
 .container-slider {
+	flex: 1;
 	@include phones {
 		width: 95%;
 	}
@@ -257,11 +258,6 @@
 	@include tablets {
 		padding-bottom: 0;
 		text-align: center;
-		width: rem(696px);
-	}
-
-	@include phones {
-		width: rem(460px);
 	}
 }
 
