@@ -19,8 +19,11 @@
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 3rem;
+
+	@include tablets {
+		margin-bottom: 0;
+	}
 	@include phones {
-		text-align: center;
 		font-size: rem(50px);
 		display: flex;
 		justify-content: center;
@@ -30,15 +33,15 @@
 
 	@include iphone {
 		text-align: center;
-		display: flex;
 		justify-content: center;
 		align-items: center;
+		width: 50%;
 	}
 }
 
 .container-order {
-	@include phones {
-
+	@include iphone {
+		align-items: center;
 	}
 
 }
@@ -104,13 +107,15 @@ input:focus {
 	padding-left: rem(10px);
 }
 
+.form__input-appartment {
+	@include phones {
+		margin-left: 0;
+	}
+}
+
 .form__input {
 	margin-right: rem(20px);
 	width: 100%;
-
-	&:last-child {
-		margin-right: 0;
-	}
 }
 
 .form__input-field {
@@ -122,12 +127,13 @@ input:focus {
 
 	@include tablets {
 		&:last-child {
-			margin-right: 0;
+		margin-right: 0;
 	}
 }
 }
+
 .form__left {
-	width: 100%;
+	width: 50%;
 	@include phones {
 		width: 100%;
 	}
@@ -157,14 +163,14 @@ textarea:focus {
 	resize: none;
 	border-radius: rem(6px);
 	@include tablets {
-		width: 100%;
+		width: 96%;
 	}
 	@include phones {
-		width: 100%;
-		margin-bottom: 3rem;
+		width: 96%;
+		margin-bottom: 0;
 	}
 	@include iphone {
-		width: 100%;
+		width: 96%;
 	}
 }
 
@@ -175,7 +181,7 @@ textarea:focus {
 }
 
 .form__right {
-	width: 100%;
+	width: 50%;
 	margin-left: rem(20px);
 
 	@include tablets {
@@ -193,10 +199,8 @@ textarea:focus {
 	justify-content: center;
 	flex-direction: row;
 	@include phones {
-		width: rem(480px);
 		margin-left: rem(20px);
 		flex-direction: column;
-		transform: translateY(10%);
 	}
 	@include tablets {
 		width: 95%;
@@ -253,15 +257,11 @@ textarea:focus {
 	padding-top: rem(20px);
 	@include phones {
 		justify-content: center;
-		padding-top: 1.5rem;
+		margin-top: 1.5rem;
 	}
-	@include tablets {
-		// padding-left: 0.39rem;
+	@include iphone {
+		margin-top: 0;
 	}
-}
-
-.form__checkbox {
-	margin-top: 1.3rem;
 }
 
 .form__checkbox-button {
@@ -277,14 +277,12 @@ textarea:focus {
 
 .form__buttons {
 	display: flex;
-	margin-top: 1.25rem;
+	margin-top: 1.1rem;
 	@include phones {
 		justify-content: center;
 		margin-bottom: 1.15rem;
 	}
 	@include iphone {
-		padding-top: rem(40px);
-		padding-right: rem(17px);
 	}
 }
 
@@ -342,6 +340,10 @@ textarea:focus {
 }
 
 // checkbox
+
+.form__checkbox {
+	margin-top: 1.45rem;
+}
 .form__checkbox-item {
 	display: flex;
 	align-items: center;
