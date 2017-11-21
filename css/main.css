@@ -972,7 +972,8 @@ template {
   font-family: "lifehack";
   color: #fff;
   font-size: 4.0625rem;
-  line-height: .9; }
+  line-height: .9;
+  margin-bottom: 0; }
   @media screen and (max-width: 768px) {
     .content__desc {
       margin-bottom: 0;
@@ -1957,8 +1958,8 @@ template {
   background-color: #ed9439;
   background-repeat: no-repeat;
   background-size: cover;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(47%, #eb8c38), color-stop(73%, #f9b43b));
   background: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(47%, #eb8c38), color-stop(73%, #f9b43b));
   background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2836,5 +2837,4 @@ input:focus {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s; }
-
 /*# sourceMappingURL=main.css.map */

@@ -342,6 +342,7 @@
 	color: $cwhite;
 	font-size: rem(65px);
 	line-height: .9;
+	margin-bottom: 0;
 	@include tablets {
 		margin-bottom: 0;
 		flex-wrap: wrap;
