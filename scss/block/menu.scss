@@ -17,6 +17,7 @@
 	position: absolute;
 	left: 5%;
 	top: 5%;
+	margin-bottom: 0;
 
 	@include phones {
 		padding-left: 3.875rem;}

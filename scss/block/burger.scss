@@ -324,6 +324,7 @@
 	font-size: rem(72px);
 	color: $cyellow;
 	font-family: $gfont;
+	margin-bottom: 0;
 	@include tablets {
 		margin-bottom: 0;
 		white-space: nowrap;

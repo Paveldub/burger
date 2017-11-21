@@ -946,7 +946,8 @@ template {
 .section-title {
   font-size: 4.5rem;
   color: #f9b43b;
-  font-family: "gagalin"; }
+  font-family: "gagalin";
+  margin-bottom: 0; }
   @media screen and (max-width: 768px) {
     .section-title {
       margin-bottom: 0;
@@ -2194,7 +2195,8 @@ template {
   font-family: 'gagalin', Helvetica, sans-serif;
   color: #fff;
   line-height: 1;
-  padding-bottom: 3.125rem; }
+  padding-bottom: 3.125rem;
+  margin-bottom: 0; }
   @media screen and (max-width: 768px) {
     .burger__title {
       padding-bottom: 0;
@@ -2322,7 +2324,8 @@ template {
   color: #fff;
   position: absolute;
   left: 5%;
-  top: 5%; }
+  top: 5%;
+  margin-bottom: 0; }
   @media screen and (max-width: 480px) {
     .menu__text {
       padding-left: 3.875rem; } }
