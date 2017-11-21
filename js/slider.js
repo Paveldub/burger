@@ -1,3 +1,6 @@
 $(document).ready(function(){
-    $('.slider').bxSlider();
+  
+    $('.burger-wrapper').bxSlider({
+        speed : 1000
+    });
   });

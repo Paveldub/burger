@@ -58,7 +58,6 @@
 	border-radius: rem(8px);
 	cursor: pointer;
 	position: relative;
-	box-shadow: 3px 3px 10px rgba(0,0,0,.7);
 	transition: .6s;
 
 	&:hover {
@@ -288,9 +287,10 @@
 	width: rem(35px);
 	height: rem(15px);
 	top: 50%;
-	left: -5%;
-	transform: rotate(90deg);
+	left: -3%;
+	transform: rotate(-90deg);
 	fill: #fff;
+	z-index: 1;
 
 	@include tablets {
 		top: 50%;
@@ -303,9 +303,10 @@
 	width: rem(35px);
 	height: rem(15px);
 	top: 50%;
-	right: -5%;
-	transform: rotate(-90deg);
+	right: -3%;
+	transform: rotate(90deg);
 	fill: #fff;
+	z-index: 1;
 
 	@include tablets {
 		top: 50%;
@@ -348,4 +349,21 @@
 		top: rem(-35px);
 	}
 
+}
+
+.bx-wrapper {
+	background: transparent;
+	border: 0;
+	box-shadow: 0 0 0 transparent;
+}
+
+.bx-default-pager {
+	display: none;
+}
+
+
+.bx-wrapper .bx-controls-direction a {
+	height: 45px;
+	right: -7px;
+	left: -7px;
 }

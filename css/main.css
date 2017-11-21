@@ -1954,8 +1954,8 @@ template {
   background-color: #ed9439;
   background-repeat: no-repeat;
   background-size: cover;
-  background: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
   background: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(47%, #eb8c38), color-stop(73%, #f9b43b));
+  background: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
   background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2019,8 +2019,6 @@ template {
   border-radius: 0.5rem;
   cursor: pointer;
   position: relative;
-  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
-          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
   -webkit-transition: .6s;
   -o-transition: .6s;
   transition: .6s; }
@@ -2242,11 +2240,12 @@ template {
   width: 2.1875rem;
   height: 0.9375rem;
   top: 50%;
-  left: -5%;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-  fill: #fff; }
+  left: -3%;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  fill: #fff;
+  z-index: 1; }
   @media screen and (max-width: 768px) {
     .burger__arrow-left {
       top: 50%;
@@ -2257,11 +2256,12 @@ template {
   width: 2.1875rem;
   height: 0.9375rem;
   top: 50%;
-  right: -5%;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  fill: #fff; }
+  right: -3%;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  fill: #fff;
+  z-index: 1; }
   @media screen and (max-width: 768px) {
     .burger__arrow-right {
       top: 50%;
@@ -2303,6 +2303,20 @@ template {
   .burger__nutrition-value {
     right: 0;
     top: -2.1875rem; } }
+
+.bx-wrapper {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: 0 0 0 transparent;
+          box-shadow: 0 0 0 transparent; }
+
+.bx-default-pager {
+  display: none; }
+
+.bx-wrapper .bx-controls-direction a {
+  height: 45px;
+  right: -7px;
+  left: -7px; }
 
 .menu {
   background-color: #ccc;
@@ -2837,4 +2851,5 @@ input:focus {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s; }
+
 /*# sourceMappingURL=main.css.map */
