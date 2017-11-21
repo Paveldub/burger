@@ -170,6 +170,9 @@ textarea:focus {
 	height: rem(118px);
 	resize: none;
 	border-radius: rem(6px);
+	border: none;
+	padding-top: rem(10px);
+	
 	@include tablets {
 		width: 100%;
 		overflow-x: hidden;
@@ -316,6 +319,7 @@ textarea:focus {
 	position: relative;
 	margin-right: rem(10px);
 	flex-shrink: 0;
+	cursor: pointer;
 
 	@include phones {
 		width: 1.1rem;
@@ -343,7 +347,7 @@ textarea:focus {
 	}
 }
 
-.form__type-radio:checked+.form__radio-img:after {
+.form__type-radio:checked + .form__radio-img:after {
 	opacity: 1;
 	transition: .5s;
 }
@@ -378,6 +382,7 @@ textarea:focus {
 	background-color: #fff;
 	position: relative;
 	margin-right: rem(10px);
+	cursor: pointer;
 }
 
 .form__input-phone {

@@ -3,14 +3,8 @@ body {
 	padding: 0;
 	font-family: 'ubuntu', Arial, Helvetica, sans-serif;
 	line-height: 1.42;
-	color: $cdark;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-p {
-	margin: 0;
-	padding: 0;
 }
 
 *, *::before, *::after {
@@ -35,8 +29,6 @@ html {
 		font-size: 10px;
 	}
 }
-
-
 
 
 body, html {
