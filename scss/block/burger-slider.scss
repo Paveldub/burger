@@ -9,6 +9,7 @@
 	background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 
 .content {
@@ -20,13 +21,8 @@
 	}
 }
 
-
-.container-slider {
-	flex: 1;
-	position: relative;
-	@include phones {
-		width: 95%;
-	}
+.burger-wrapper {
+	height: 100vh;
 }
 
 .burger-content {
@@ -40,9 +36,16 @@
 		}
 
 		@include phones {
-		
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 
+		@include iphone {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 
 	}
 
@@ -75,7 +78,7 @@
 
 	@include phones {
 		position: absolute;
-		left: 0;
+		left: 1%;
 		top: 50%;
 	}
 }
@@ -292,7 +295,8 @@
 	left: -5%;
 	transform: rotate(90deg);
 	fill: #fff;
-	z-index: 2;
+	z-index: 10;
+	cursor: pointer;
 
 	@include tablets {
 		top: 50%;
@@ -308,7 +312,8 @@
 	right: -5%;
 	transform: rotate(-90deg);
 	fill: #fff;
-	z-index: 1;
+	z-index: 10;
+	cursor: pointer;
 
 	@include tablets {
 		top: 50%;
@@ -326,11 +331,10 @@
 
 	@include phones {
 		top: 0;
-		left: 0;
+		left: 1%;
 	}
 
 	@include iphone {
-		top: -3.1875rem;
 		left: 0;
 	}
 }
@@ -343,37 +347,31 @@
 	}
 
 	@include phones {
-		right: 5%;
+		right: 1%;
 		top: 1%;
 	}
 	@include iphone {
 		right: 0;
-		top: rem(-35px);
 	}
 
 }
 
 .bx-wrapper {
-	background: transparent;
-	border: 0;
-	box-shadow: 0 0 0 transparent;
+	margin-bottom: 0;
+	box-shadow: none;
+	border: none;
+	background: none;
 }
 
-.bx-default-pager {
+.bx-wrapper .bx-pager {
+	padding-top: 0;
 	display: none;
 }
 
-
-.bx-wrapper .bx-next {
-	right: -45px;
+.bx-prev {
+	display: none;
 }
 
-.bx-wrapper .bx-prev {
-	left: -45px;
-}
-
-.bx-wrapper .bx-controls-direction a {
-	top: 57%;
-	width: 34px;
-	height: 39px;
+.bx-next {
+	display: none;
 }
