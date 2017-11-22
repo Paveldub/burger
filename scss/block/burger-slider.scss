@@ -48,7 +48,9 @@
 
 .burger__black-star {
 	width: rem(460px);
-	height: rem(320px);
+	height: 19rem;
+	display: flex;
+	justify-content: center;
 }
 
 .burger__compound {
@@ -283,14 +285,14 @@
 // arrows-start
 
 .burger__arrow-left {
-	position: absolute;
+	position: absolute; 
 	width: rem(35px);
 	height: rem(15px);
 	top: 50%;
-	left: -3%;
-	transform: rotate(-90deg);
+	left: -5%;
+	transform: rotate(90deg);
 	fill: #fff;
-	z-index: 1;
+	z-index: 2;
 
 	@include tablets {
 		top: 50%;
@@ -303,8 +305,8 @@
 	width: rem(35px);
 	height: rem(15px);
 	top: 50%;
-	right: -3%;
-	transform: rotate(90deg);
+	right: -5%;
+	transform: rotate(-90deg);
 	fill: #fff;
 	z-index: 1;
 
@@ -362,8 +364,16 @@
 }
 
 
+.bx-wrapper .bx-next {
+	right: -45px;
+}
+
+.bx-wrapper .bx-prev {
+	left: -45px;
+}
+
 .bx-wrapper .bx-controls-direction a {
-	height: 45px;
-	right: -7px;
-	left: -7px;
+	top: 57%;
+	width: 34px;
+	height: 39px;
 }

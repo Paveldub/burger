@@ -1772,8 +1772,7 @@ template {
     margin-bottom: 0; } }
 
 .items__list {
-  width: 33%;
-  margin-bottom: 2.8125rem; }
+  width: 33%; }
   @media screen and (max-width: 480px) {
     .items__list {
       display: -webkit-box;
@@ -2010,7 +2009,13 @@ template {
 
 .burger__black-star {
   width: 28.75rem;
-  height: 20rem; }
+  height: 19rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .burger__compound {
   width: 5.625rem;
@@ -2240,12 +2245,12 @@ template {
   width: 2.1875rem;
   height: 0.9375rem;
   top: 50%;
-  left: -3%;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  left: -5%;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
   fill: #fff;
-  z-index: 1; }
+  z-index: 2; }
   @media screen and (max-width: 768px) {
     .burger__arrow-left {
       top: 50%;
@@ -2256,10 +2261,10 @@ template {
   width: 2.1875rem;
   height: 0.9375rem;
   top: 50%;
-  right: -3%;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  right: -5%;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   fill: #fff;
   z-index: 1; }
   @media screen and (max-width: 768px) {
@@ -2313,10 +2318,16 @@ template {
 .bx-default-pager {
   display: none; }
 
+.bx-wrapper .bx-next {
+  right: -45px; }
+
+.bx-wrapper .bx-prev {
+  left: -45px; }
+
 .bx-wrapper .bx-controls-direction a {
-  height: 45px;
-  right: -7px;
-  left: -7px; }
+  top: 57%;
+  width: 34px;
+  height: 39px; }
 
 .menu {
   background-color: #ccc;
