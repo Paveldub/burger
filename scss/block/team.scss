@@ -43,6 +43,8 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-content: center;
+	width: 70%;
+	height: 80%;
 
 	@include tablets {
 		display: flex;
@@ -79,7 +81,6 @@
 	font-style: rem(14px);
 	text-transform: uppercase;
 	margin-bottom: rem(17px);
-	transition: all 5s;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -115,10 +116,10 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	transition: all .5s;
+	transition-delay: all .5s;
 
 	&.team-acco__item--active {
-		transition: all .5s;
+		transition: all .5s ease;
 		.team-acco__trigger {
 			color: #f9b43b;
 			&:before {
@@ -137,7 +138,6 @@
 	margin-left: rem(20px);
 	margin-bottom: rem(39px);
 	display: none;
-	transition: all .5s;
 	@include tablets {
 		margin-left: 0;
 	}
