@@ -5,7 +5,7 @@
 	position: relative;
 	overflow: hidden;
 	display: flex;
-	height: 100vh;
+	height: 100vh !important;
 	min-height: rem(650px);
 	flex-direction: column;
 	@include tablets {
@@ -199,8 +199,6 @@
 	}
 }
 
-
-		
 
 .overlay-menu {
 	@include tablets {
@@ -410,6 +408,7 @@
 	display: block;
 	width: rem(16px);
 	height: rem(16px);
+
 	&:before {
 		position: absolute;
 		content: "";
@@ -421,6 +420,7 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+
 	&:after {
 		position: absolute;
 		content: '';

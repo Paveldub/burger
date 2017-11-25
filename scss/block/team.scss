@@ -94,6 +94,7 @@
 		border-left: rem(6px) solid transparent;
 		margin-right: rem(10px);
 		border-bottom-width: 0;
+		transition: all .5s;
 	}
 	@include tablets {
 		width: 13.6875rem;
@@ -113,21 +114,31 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-}
+	transition: all .5s;
 
-.team-acco__item--active {
-	.team-acco__trigger {
-		color: #f9b43b;
-		&:before {
-			transform: rotate(-180deg);
+	&.team-acco__item--active {
+		transition: all .5s;
+		.team-acco__trigger {
+			color: #f9b43b;
+			&:before {
+				transform: rotate(-180deg);
+				transition: all .5s;
+			}
 		}
 	}
+}
+
+
+.team-acco__item--active .team-acco__content {
+	display: flex;
+	transition: all .5s;
 }
 
 .team-acco__content {
 	display: flex;
 	margin-left: rem(20px);
 	margin-bottom: rem(39px);
+	display: none;
 	@include tablets {
 		margin-left: 0;
 	}

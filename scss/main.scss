@@ -2,16 +2,14 @@
 @import "config/variables";
 @import "config/mixins";
 
-// screen width
-@import "layout/media";
-
-
 // layout 
 @import "layout/adjustment";
 @import "layout/base";
 @import "layout/fonts";
 @import "layout/normalize";
 @import "layout/sprite-svg";
+@import "layout/jquery.bxslider";
+@import "layout/media";
 
 // blocks 
 @import "block/burger";

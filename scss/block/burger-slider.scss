@@ -3,7 +3,6 @@
 	height: 100vh;
 	min-height: rem(650px);
 	overflow: hidden;
-	background-color: #ed9439;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
@@ -22,7 +21,7 @@
 }
 
 .burger-wrapper {
-	height: 100vh;
+	height: 100%;
 }
 
 .burger-content {
