@@ -1385,7 +1385,10 @@ ul.bxslider {
   font-family: 'gagalin', Helvetica, sans-serif;
   font-style: 0.875rem;
   text-transform: uppercase;
-  margin-bottom: 1.0625rem; }
+  margin-bottom: 1.0625rem;
+  -webkit-transition: all 5s;
+  -o-transition: all 5s;
+  transition: all 5s; }
   .team-acco__trigger:last-child {
     margin-bottom: 0; }
   .team-acco__trigger:before {
@@ -1447,26 +1450,20 @@ ul.bxslider {
       .team-acco__item.team-acco__item--active .team-acco__trigger:before {
         -webkit-transform: rotate(-180deg);
             -ms-transform: rotate(-180deg);
-                transform: rotate(-180deg);
-        -webkit-transition: all .5s;
-        -o-transition: all .5s;
-        transition: all .5s; }
+                transform: rotate(-180deg); }
 
 .team-acco__item--active .team-acco__content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex; }
+
+.team-acco__content {
+  margin-left: 1.25rem;
+  margin-bottom: 2.4375rem;
+  display: none;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s; }
-
-.team-acco__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 1.25rem;
-  margin-bottom: 2.4375rem;
-  display: none; }
   @media screen and (max-width: 768px) {
     .team-acco__content {
       margin-left: 0; } }
