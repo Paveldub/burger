@@ -18,9 +18,9 @@
 	left: 5%;
 	top: 5%;
 	margin-bottom: 0;
-
 	@include phones {
-		padding-left: 3.875rem;}
+		padding-left: 3.875rem;
+	}
 }
 
 .variety-acco {
@@ -29,18 +29,21 @@
 	right: 0;
 	top: 0;
 	bottom: 0;
-
 	@include tablets {
 		justify-content: flex-end;
 	}
 	@include phones {
 		justify-content: flex-end;
 	}
-
 }
 
 .variety-acco__items {
 	display: flex;
+	&.variety-acco__items--active {
+		.variety-acco__block {
+			display: block;
+		}
+	}
 }
 
 .variety-acco__img {
@@ -56,13 +59,12 @@
 	&:after {
 		position: absolute;
 		content: "";
-   		background: rgba(#141414, .7);
+		background: rgba(#141414, .7);
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
 	}
-
 }
 
 .variety-acco__trigger {
@@ -74,34 +76,25 @@
 	white-space: nowrap;
 	z-index: 1;
 	display: flex;
+	&.variety-acco__trigger--active {
+		color: #f9b43b;
+	}
 }
 
 .variety-acco__block {
 	width: rem(540px);
 	display: none;
 	background-color: rgba(#353332, .93);
-
-	 @include tablets {
+	@include tablets {
 		opacity: 0;
 		width: 0;
 	}
-		}
+}
 
 .variety-acco__text {
 	padding: rem(60px) rem(35px);
-  	font-weight: 100;
+	font-weight: 100;
 	@include ubuntu();
 	font-size: rem(14px);
 	color: #fff;
 }
-
-.variety-acco__items--active {
-	.variety-acco__block {
-		display: block;
-	}	
-}
-
-
-
-
-

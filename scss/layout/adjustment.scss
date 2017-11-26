@@ -1,10 +1,7 @@
 .wrapper {
 	width: 100%;
-	// min-width: rem(940px);
-	min-height: 100%;
-	position: relative;
+	height: 100%;
 	overflow: hidden;
-
 	@include tablets {
 		min-width: 0;
 	}
@@ -13,6 +10,7 @@
 .maincontent {
 	width: 100%;
 	min-height: rem(650px);
+	position: relative;
 }
 
 .container {
