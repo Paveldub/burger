@@ -5,17 +5,13 @@
 	position: relative;
 	overflow: hidden;
 	display: flex;
-	height: 100vh;
+	height: 100%;
 	min-height: rem(650px);
 	flex-direction: column;
 	@include tablets {
 		justify-content: center;
 		align-items: center;
 	}
-}
-
-.hero {
-	height: 100vh;
 }
 
 .header {
@@ -157,9 +153,11 @@
 	
 			@include tablets {
 				display: block;
+				z-index: 100;
 			}
 			@include phones {
 				display: block;
+				z-index: 100;
 			}
 		}
 	}
@@ -391,7 +389,6 @@
 }
 
 .fixed-menu {
-	// ul - column
 	position: fixed;
 	top: 5.625rem;
 	right: 3.125rem;
