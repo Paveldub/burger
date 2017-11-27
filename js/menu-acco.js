@@ -1,13 +1,12 @@
 
 
 
-
-let acc = document.querySelector('.variety-acco'), // ul
+let acc = document.querySelector('.variety-acco__items'),
     list = acc.children
 
 acc.addEventListener('click', function (event) {
     let target = event.target
-    if (!target.classList.contains('variety-acco__trigger')) { // link
+    if (!target.classList.contains('variety-acco__trigger')) {
         return
     }
     event.preventDefault()

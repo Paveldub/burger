@@ -258,11 +258,70 @@ textarea:focus {
 	}
 }
 
-.header__btn-margin {
+.form-button__style {
+	min-width: rem(98px);
+	padding: rem(10px) rem(15px);
+	border-radius: rem(5px);
+	background-color: $corange;
+	text-decoration: none;
+	color: $cwhite;
+	font-size: rem(13px);
+	text-transform: uppercase;
+	transition: .6s;
+	font-weight: 500;
+	display: inline-block;
+	cursor: pointer;
+	&:hover {
+		background-color: darken($corange, 7%);
+	}
+}
+
+.popup__link {
+	min-width: rem(98px);
+	padding: rem(10px) rem(15px);
+	border-radius: rem(5px);
+	background-color: $corange;
+	text-decoration: none;
+	color: $cwhite;
+	font-size: rem(13px);
+	text-transform: uppercase;
+	transition: .6s;
+	font-weight: 500;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	&:hover {
+		background-color: darken($corange, 7%);
+	}
+}
+
+.fancybox-close-small {
+	display: none;
+	z-index: 0;
+	width: 0;
+	height: 0;
+}
+
+.fancybox-slide > * {
+	padding: rem(30px);
+	border-radius: rem(7px);
+	border: 1px solid #e45028;
+	margin: 0;
+	background: #1E1E1E;
+}
+
+.form-button-margin {
 	margin-left: 0;
 	@include tablets {
 		margin-left: 0;
 	}
+}
+
+.popup-title {
+	@include gagalin;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
 }
 
 .form__btns {
@@ -411,4 +470,13 @@ textarea:focus {
 .form__checkbox-button:checked+.form__img:after {
 	opacity: 1;
 	transition: all .3s;
+}
+
+
+
+// modal window
+
+.popup {
+	display: none;
+	text-align: center;
 }

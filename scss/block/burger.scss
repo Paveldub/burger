@@ -443,9 +443,11 @@
 	}
 }
 
-.fixed-menu__link--active {
-	&:after {
-		opacity: 1;
+.fixed-menu__link {
+	&.fixed-menu__link--active {
+		&:after {
+			opacity: 1;
+		}
 	}
 }
 
