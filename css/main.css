@@ -8,7 +8,7 @@
 
 .maincontent {
   width: 100%;
-  min-height: 100%;
+  min-height: 650px;
   position: relative; }
 
 .container {
@@ -2143,8 +2143,8 @@ ul.bxslider {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  background: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
   background: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(47%, #eb8c38), color-stop(73%, #f9b43b));
+  background: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
   background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3070,4 +3070,5 @@ input:focus {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s; }
+
 /*# sourceMappingURL=main.css.map */
