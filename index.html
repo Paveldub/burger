@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNebg96x85zZyZAT4LGdFhQBHKNxqDruE&callback=initMap"
-  async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNebg96x85zZyZAT4LGdFhQBHKNxqDruE&callback=initMap" async
+    defer></script>
   <title>Burger Master</title>
 </head>
 
@@ -24,7 +24,7 @@
               <nav class="nav">
                 <ul class="nav__list">
                   <li class="nav__items">
-                    <a href="#" class="nav__link" data-goto="1">о нас</a>
+                    <a href="#" class="nav__link" data-index="1">о нас</a>
                   </li>
                   <li class="nav__items">
                     <a href="#" class="nav__link" data-goto="2">бургеры</a>
@@ -76,7 +76,7 @@
         </div>
       </section>
 
-      <section class="wearebest" id="fullpage">
+      <section class="wearebest" id="fullpage" data-index="1">
         <div class="container container-overrided">
           <h2 class="best-title">
             Мы лучшие
@@ -892,11 +892,12 @@
           <div class="form__class">
             <div class="container container__change">
               <div class="form__left">
+        <form action="server.php" method="post" id="form">
                 <div class="form__element">
-                  <label class="form__input">
+                  <label for="user-name" class="form__input">
                     <div class="form__title">Имя</div>
-                    <input type="text" class="form__input-field">
-                  </label>
+                    <input type="text" id="user-name" name="user-name">
+            </label>
                   <label class="form__input">
                     <div class="form__title">Телефон</div>
                     <input type="text" class="form__input-field form__input-phone">
@@ -926,8 +927,10 @@
                     <input type="text" class="form__input-field">
                   </label>
                 </div>
+              </form>
               </div>
               <div class="form__right">
+              <form action="server.php" method="post" id="form">
                 <div class="form__textarea">
                   <div class="form__textarea-title">
                     Комментарий
@@ -955,12 +958,13 @@
                 </div>
                 <div class="form__btns">
                   <div class="form-button form-button-margin">
-                    <a data-fancybox data-src="#hidden-content" class="form-button__style">заказать</a>
+                    <button type="submit" data-fancybox data-src="#hidden-content" class="form-button__style">заказать</b>
                   </div>
                   <div class="form__trans-btn">
                     <button type="reset" class="form__transp">Очистить</button>
                   </div>
                 </div>
+            </form>
               </div>
             </div>
           </div>
@@ -1010,37 +1014,37 @@
           </div>
         </footer>
       </section>
-    </div>
+      </div>
     </div>
 
 
-        <ul class="fixed-menu">
-            <li class="fixed-menu__item">
-              <a href="#" class="fixed-menu__link fixed-menu__link--active"></a>
-            </li>
-            <li class="fixed-menu__item">
-              <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-              <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-              <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-              <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-              <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-              <a href="#" class="fixed-menu__link"></a>
-            </li>
-            <li class="fixed-menu__item">
-              <a href="#" class="fixed-menu__link"></a>
-            </li>
-          </ul> 
- 
+    <ul class="fixed-menu">
+      <li class="fixed-menu__item">
+        <a href="#" class="fixed-menu__link fixed-menu__link--active"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="#" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="#" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="#" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="#" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="#" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="#" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="#" class="fixed-menu__link"></a>
+      </li>
+    </ul>
+
     <div class="overlay" id="overlay">
       <nav class="overlay-menu">
         <ul class="overlay-menu__list">
@@ -1066,11 +1070,12 @@
       </nav>
     </div>
 
-        <div class="popup" id="hidden-content">
-           <h5 class="popup-title">Спасибо за заказ!</h5>
-           <a href="#" class="popup__link">закрыть</a>
-          </div>
-   
+
+    <div class="popup" id="hidden-content">
+      <h5 class="popup-title">Спасибо за заказ!</h5>
+      <a href="#" class="popup__link">закрыть</a>
+    </div>
+
     <script src="./js/svg4everybody.js"></script>
     <script src="./js/jquery-3.2.1.js"></script>
     <script src="./js/jquery.bxslider.js"></script>
@@ -1079,7 +1084,7 @@
     <script src="./js/acco.js"></script>
     <script src="./js/menu-acco.js"></script>
     <script src="./js/jquery.fullPage.js"></script>
-    <script src="./js/ops.js"></script> 
+    <script src="./js/ops.js"></script>
     <script src="./js/map.js"></script>
     <script src="./js/jquery.fancybox.js"></script>
     <script src="./js/fancy.js"></script>

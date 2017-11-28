@@ -14,7 +14,8 @@
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
-  will-change: transform; }
+  will-change: transform;
+  overflow: hidden; }
 
 .container {
   width: 95%;
@@ -41,7 +42,8 @@ body {
   font-family: 'ubuntu', Arial, Helvetica, sans-serif;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden; }
 
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
@@ -3744,7 +3746,8 @@ input:focus {
   transition: .6s;
   font-weight: 500;
   display: inline-block;
-  cursor: pointer; }
+  cursor: pointer;
+  border: none; }
   .form-button__style:hover {
     background-color: #ce401a; }
 

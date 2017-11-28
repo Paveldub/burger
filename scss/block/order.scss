@@ -271,6 +271,7 @@ textarea:focus {
 	font-weight: 500;
 	display: inline-block;
 	cursor: pointer;
+	border: none;
 	&:hover {
 		background-color: darken($corange, 7%);
 	}
@@ -480,3 +481,7 @@ textarea:focus {
 	display: none;
 	text-align: center;
 }
+
+
+
+

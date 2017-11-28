@@ -1,5 +1,5 @@
 $("[data-fancybox]").fancybox({
-    transitionEffect : "rotate"
+    transitionEffect: "rotate"
 });
 
 $('.popup__link').on('click', e => {
@@ -7,3 +7,5 @@ $('.popup__link').on('click', e => {
 
     $.fancybox.close();
 })
+
+
