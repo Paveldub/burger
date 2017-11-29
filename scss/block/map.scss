@@ -12,6 +12,10 @@
 #map__content {
 	width: 100%;
 	height: 38.625rem;
+
+	@include tablets {
+		height: 100%;
+	}
 }
 
 .footer {
@@ -40,6 +44,7 @@
 	padding: rem(11px) 0 rem(11px);
 
 	@include iphone6 {
+		width: 100%;
 		white-space: nowrap;
 	}
 
@@ -73,10 +78,12 @@
 	color: #fff;
 	font-size: rem(14px);
 	font-style: normal;
+	width: 100%;
 
 	@include phones {
 		white-space: nowrap;
 		margin-bottom: rem(10px);
+		width: 100%;
 	}
 
 	@include iphone {
@@ -90,12 +97,14 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		width: 100%;
 	}
 
 	@include iphone {
 		align-items: center;
 		justify-content: center;
 		padding: rem(5px) 0 rem(5px) 0;
+		width: 100%;
 	}
 }
 
@@ -155,7 +164,7 @@
 		align-items: center;
 		text-align: center;
 		margin-left: 0;
-		width: 95%;
+		width: 100%;
 	}
 
 }

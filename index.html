@@ -891,80 +891,80 @@
           </h2>
           <div class="form__class">
             <div class="container container__change">
-              <div class="form__left">
-        <form action="server.php" method="post" id="form">
-                <div class="form__element">
-                  <label for="user-name" class="form__input">
-                    <div class="form__title">Имя</div>
-                    <input type="text" id="user-name" name="user-name">
-            </label>
-                  <label class="form__input">
-                    <div class="form__title">Телефон</div>
-                    <input type="text" class="form__input-field form__input-phone">
-                  </label>
+              <form action="server.php" method="post" id="form" class="form-flex">
+                <div class="form__left">
+                  <div class="form__element">
+                    <label for="user-name" class="form__input">
+                      <div class="form__title">Имя</div>
+                      <input type="text" id="user-name" name="user-name" class="form__input-field form__input-phone">
+                    </label>
+                    <label for="phone-number" class="form__input">
+                      <div class="form__title">Телефон</div>
+                      <input type="text" id="phone-number1" class="form__input-field form__input-phone" name="phone-number">
+                    </label>
+                  </div>
+                  <div class="form__element">
+                    <label for="street" class="form__input">
+                      <div class="form__title">Улица</div>
+                      <input type="text" id="street1" class="form__input-field" name="street">
+                    </label>
+                  </div>
+                  <div class="form__element">
+                    <label for="house" class="form__input">
+                      <div class="form__title">Дом</div>
+                      <input type="text" id="house1" class="form__input-field" name="house">
+                    </label>
+                    <label for="building" class="form__input">
+                      <div class="form__title">Корпус</div>
+                      <input type="text" id="building1" class="form__input-field" name="building">
+                    </label>
+                    <label for="appartment" class="form__input form__input-appartment">
+                      <div class="form__title">Квартира</div>
+                      <input type="text" id="appartment1" class="form__input-field" name="appartment">
+                    </label>
+                    <label for="floor" class="form__input form__input--overrided">
+                      <div class="form__title">Этаж</div>
+                      <input id="floor1" type="text" class="form__input-field" name="floor">
+                    </label>
+                  </div>
                 </div>
-                <div class="form__element">
-                  <label class="form__input">
-                    <div class="form__title">Улица</div>
-                    <input type="text" class="form__input-field">
-                  </label>
-                </div>
-                <div class="form__element">
-                  <label class="form__input">
-                    <div class="form__title">Дом</div>
-                    <input type="text" class="form__input-field">
-                  </label>
-                  <label class="form__input">
-                    <div class="form__title">Корпус</div>
-                    <input type="text" class="form__input-field">
-                  </label>
-                  <label class="form__input form__input-appartment">
-                    <div class="form__title">Квартира</div>
-                    <input type="text" class="form__input-field">
-                  </label>
-                  <label class="form__input form__input--overrided">
-                    <div class="form__title">Этаж</div>
-                    <input type="text" class="form__input-field">
-                  </label>
-                </div>
+                <div class="form__right">
+                  <div class="form__textarea">
+                    <div class="form__textarea-title">
+                      Комментарий
+                    </div>
+                    <label for="text-area">
+                      <textarea id="text-area" name="text-area" class="form__textarea-field" style="margin-bottom: 0;"></textarea>
+                    </label>
+                  </div>
+                  <div class="form__buttons">
+                    <label for="change" class="form__radio">
+                      <input type="radio" id="change" class="form__type-radio" name="form__type-radio">
+                      <div class="form__radio-img"></div>
+                      <span class="form__radio-title">Потребуется сдача</span>
+                    </label>
+                    <label for="by-card" class="form__radio">
+                      <input type="radio" id="by-card" class="form__type-radio" name="form__type-radio">
+                      <div class="form__radio-img"></div>
+                      <span class="form__radio-title">Оплата по карте</span>
+                    </label>
+                  </div>
+                  <div class="form__checkbox">
+                    <label for="dont-disturb" class="form__checkbox-item">
+                      <input id="dont-disturb" type="checkbox" name="dont-disturb" class="form__checkbox-button" value="1">
+                      <div class="form__img"></div>
+                      <span class="form__title-dont">Не перезванивать</span>
+                    </label>
+                  </div>
+                  <div class="form__btns">
+                    <div class="form-button form-button-margin">
+                      <button type="submit" class="form-button__style" data-fancybox="#hidden-content">заказать</button>
+                    </div>
+                    <div class="form__trans-btn">
+                      <button type="reset" class="form__transp">Очистить</button>
+                    </div>
+                  </div>
               </form>
-              </div>
-              <div class="form__right">
-              <form action="server.php" method="post" id="form">
-                <div class="form__textarea">
-                  <div class="form__textarea-title">
-                    Комментарий
-                  </div>
-                  <textarea class="form__textarea-field" style="margin-bottom: 0;"></textarea>
-                </div>
-                <div class="form__buttons">
-                  <label class="form__radio">
-                    <input type="radio" class="form__type-radio" name="form__type-radio">
-                    <div class="form__radio-img"></div>
-                    <span class="form__radio-title">Потребуется сдача</span>
-                  </label>
-                  <label class="form__radio">
-                    <input type="radio" class="form__type-radio" name="form__type-radio">
-                    <div class="form__radio-img"></div>
-                    <span class="form__radio-title">Оплата по карте</span>
-                  </label>
-                </div>
-                <div class="form__checkbox">
-                  <label class="form__checkbox-item">
-                    <input type="checkbox" class="form__checkbox-button">
-                    <div class="form__img"></div>
-                    <span class="form__title-dont">Не перезванивать</span>
-                  </label>
-                </div>
-                <div class="form__btns">
-                  <div class="form-button form-button-margin">
-                    <button type="submit" data-fancybox data-src="#hidden-content" class="form-button__style">заказать</b>
-                  </div>
-                  <div class="form__trans-btn">
-                    <button type="reset" class="form__transp">Очистить</button>
-                  </div>
-                </div>
-            </form>
               </div>
             </div>
           </div>
@@ -1088,6 +1088,7 @@
     <script src="./js/map.js"></script>
     <script src="./js/jquery.fancybox.js"></script>
     <script src="./js/fancy.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 
 </html>

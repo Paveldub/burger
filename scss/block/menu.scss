@@ -42,6 +42,7 @@
 	&.variety-acco__items--active {
 		.variety-acco__block {
 			display: block;
+			transition: all .6s ease-in;
 		}
 	}
 }

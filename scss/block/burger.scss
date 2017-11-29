@@ -153,7 +153,6 @@
 	
 			@include tablets {
 				display: block;
-				z-index: 100;
 			}
 			@include phones {
 				display: block;

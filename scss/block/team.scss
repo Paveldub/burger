@@ -196,10 +196,11 @@
 .team-acco__pic {
 	background: url('../img/content/aphex.png') center center no-repeat;
 	border-radius: 50%;
-	width: rem(100px);
-	height: rem(100px);
+	width: 6.25rem;
+	height: 6.25rem;
 	background-size: cover;
 	background-repeat: no-repeat;
+	flex-shrink: 0;
 
 	@include tablets {
 		margin-bottom: 22px;
