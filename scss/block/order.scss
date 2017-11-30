@@ -215,7 +215,6 @@ textarea:focus {
 	justify-content: center;
 	flex-direction: row;
 	@include phones {
-		margin-left: rem(20px);
 		flex-direction: column;
 	}
 	@include tablets {
@@ -460,14 +459,6 @@ textarea:focus {
 	top: 0.18rem;
 	background-repeat: no-repeat;
 	opacity: 0;
-	@include phones {
-		left: 0.1rem;
-		top: 0.18rem;
-	}
-	@include iphone {
-		left: 0.01rem;
-		top: 0.02rem;
-	}
 }
 
 .form__checkbox-button:checked+.form__img:after {
@@ -490,6 +481,40 @@ textarea:focus {
 	@include tablets {
 		flex-direction: column;
 	}
-	
+
+	@include tablets { 
+		flex-direction: column;
+	}
+
+	@include phones {
+		flex-direction: column;
+	}
+
+	@include iphone {
+		flex-direction: column;
+	}
+
+	@include iphone6 {
+		flex-direction: column;
+	}
+
+	@include iphone520 {
+		flex-direction: column;
+	}
+
+	@include size930 {
+		flex-direction: column;
+	}
+
+	@include iphone6s {
+		flex-direction: column;
+	}
+}
+
+.sent {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	color: #fff;
 }
 

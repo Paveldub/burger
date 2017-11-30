@@ -38,7 +38,7 @@
 	background: rgba(#454545, .5);
 	opacity: 0;
 	transition: .5s;
-	padding: rem(50px) rem(40px);
+	padding: 1.125rem 1.5rem;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -83,10 +83,15 @@
 	padding-bottom: rem(25px);
 	@include tablets {
 		padding-bottom: 0;
-		width: rem(283px);
+		width: 13.6875rem;
+		text-align: center;
 	}
 	@include phones {
 		display: none;
+	}
+
+	@include size930 {
+		font-size: rem(12px);
 	}
 }
 
@@ -104,6 +109,12 @@
 		font-size: rem(14px);
 		text-align: center;
 	}
+
+	@include size930 {
+		padding: rem(12px) rem(12px);
+	}
+
+
 }
 
 .review__link {

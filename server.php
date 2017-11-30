@@ -28,48 +28,35 @@ $credit = isset($credit) ? 'НЕТ' : 'ДА';
 
 $mail__message = "
 
-<html>
-<head>
-<title>Order</title>
-</head>
-<body>  
-<h2>Order</h2>
-
-<ul>
-
-<li>Имя:' . $name . '</li>
-<li>Номер телефона:' . $phone .'</li>
-<li>Улица: ' . $street . '</li>
-<li>Дом: ' . $house . '</li>
-<li>Корпус: ' . $building . '</li>
-<li>Квартира: ' . $appartment . '</li>
-<li>Этаж: ' . $floor . '</li>
-<li>Форма: ' . $area . '</li>
-<li>Сдача: ' .  $change .' </li>
-<li>Кредитная карта: ' . $card . '</li>
-<li>Перезванивать: ' . $disturb . '</li>
-
-</ul>
-</body>
-
-</html> ";
 
 
-$headers = "From: Pavel Dzemidovich <dubstr1@gmail.com>\r\n".
-"MIME-Version: 1.0" . "\r\n" .
-"Content-type: text/html; charset=UTF-8" . "\r\n";
+Имя: . $name . 
+Номер телефона: . $phone .
+Улица:  . $street . 
+Дом:  . $house . 
+Корпус: . $building . 
+Квартира:  . $appartment . 
+Этаж:  . $floor . 
+Форма:  . $area . 
+Сдача:  .  $change .
+Кредитная карта:  . $card . 
+Перезванивать: .  $disturb . 
+
+
+
+";
+
 
 $mail = mail('dubstr1@gmail.com', 'order', $mail__message, $headers);
 
 if ($mail) {
     $data['status'] = "OK";
     $data['mes'] = "Mail sent";
-
 }else {
     $data['status'] = "NO";
     $data['mes'] = "Error";
 }
-
 header('Content-type:application/json;charset=utf-8');
 echo json_encode ($data);
 ?>
+

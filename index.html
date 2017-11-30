@@ -5,16 +5,17 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.css">
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNebg96x85zZyZAT4LGdFhQBHKNxqDruE&callback=initMap" async
     defer></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/onepage-scroll.css">
   <title>Burger Master</title>
 </head>
 
 <body body--active>
   <div class="wrapper">
-    <div class="maincontent" id="main">
-      <section class="burger hero" id="fullpage">
+    <div class="maincontent">
+      <section class="section burger hero">
         <div class="container burger__container">
           <header class="header">
             <div class="header__logo">
@@ -24,28 +25,28 @@
               <nav class="nav">
                 <ul class="nav__list">
                   <li class="nav__items">
-                    <a href="#" class="nav__link" data-index="1">о нас</a>
+                    <a href="#" class="page1 nav__link">о нас</a>
                   </li>
                   <li class="nav__items">
-                    <a href="#" class="nav__link" data-goto="2">бургеры</a>
+                    <a href="#" class="page2 nav__link">бургеры</a>
                   </li>
                   <li class="nav__items">
-                    <a href="#" class="nav__link" data-goto="3">команда</a>
+                    <a href="#" class="page3 nav__link">команда</a>
                   </li>
                   <li class="nav__items">
-                    <a href="#" class="nav__link" data-goto="4">меню</a>
+                    <a href="#" class="page4 nav__link">меню</a>
                   </li>
                   <li class="nav__items">
-                    <a href="#" class="nav__link" data-goto="5">отзывы</a>
+                    <a href="#" class="page5 nav__link">отзывы</a>
                   </li>
                   <li class="nav__items">
-                    <a href="#" class="nav__link" data-goto="6">контакты</a>
+                    <a href="#" class="page6 nav__link">контакты</a>
                   </li>
                 </ul>
               </nav>
             </div>
             <div class="header__btn">
-              <a href="#" class="order-link" data-goto="7">заказать</a>
+              <a href="#" class="order-link">заказать</a>
             </div>
             <div class="header__burger-btn" id="toggle">
               <span class="header__burger-item header__burger-item--top"></span>
@@ -76,7 +77,7 @@
         </div>
       </section>
 
-      <section class="wearebest" id="fullpage" data-index="1">
+      <section class="section wearebest">
         <div class="container container-overrided">
           <h2 class="best-title">
             Мы лучшие
@@ -136,7 +137,7 @@
         </div>
       </section>
 
-      <section class="burger-slider" id="fullpage">
+      <section class="section burger-slider">
         <div class="container container-slider">
           <div class="burger-wrapper">
             <div class="burger-content">
@@ -618,7 +619,7 @@
           </div>
       </section>
 
-      <section class="team">
+      <section class="section team">
         <div class="description">
           <div class="description__team">
             <h2 class="description__title">
@@ -699,7 +700,7 @@
         </div>
       </section>
 
-      <section class="section menu">
+      <section class="section menu" class="section">
         <div class="menu__title">
           <h2 class="menu__text">Меню</h2>
         </div>
@@ -759,7 +760,7 @@
         </ul>
       </section>
 
-      <section class="testimonials" id="fullpage">
+      <section class="section testimonials">
         <ul class="comments">
           <li class="comments__items" style="background-image: url('./img/content/photo-1.png')">
             <img src="img/content/photo-1.png" alt="forseo" class="comments__seo">
@@ -884,7 +885,7 @@
         </ul>
       </section>
 
-      <section class="order" id="fullpage">
+      <section class="section order">
         <div class="container container-order">
           <h2 class="order__title">
             закажите доставку
@@ -900,7 +901,7 @@
                     </label>
                     <label for="phone-number" class="form__input">
                       <div class="form__title">Телефон</div>
-                      <input type="text" id="phone-number1" class="form__input-field form__input-phone" name="phone-number">
+                      <input type="text" id="phone-number" class="form__input-field form__input-phone" name="phone-number">
                     </label>
                   </div>
                   <div class="form__element">
@@ -958,7 +959,7 @@
                   </div>
                   <div class="form__btns">
                     <div class="form-button form-button-margin">
-                      <button type="submit" class="form-button__style" data-fancybox="#hidden-content">заказать</button>
+                      <button type="submit" class="form-button__style">заказать</button>
                     </div>
                     <div class="form__trans-btn">
                       <button type="reset" class="form__transp">Очистить</button>
@@ -969,9 +970,13 @@
             </div>
           </div>
         </div>
+        <div class="popup" id="hidden-content">
+          <h5 class="popup-title">Спасибо за заказ!</h5>
+          <a href="#" class="popup__link">закрыть</a>
+        </div>
       </section>
 
-      <section class="map" id="fullpage">
+      <section class="section map">
         <div id="map__content"></div>
         <footer class="footer" style="background-image: url('./img/content/footer.png')">
           <div class="container container__menu">
@@ -1020,28 +1025,28 @@
 
     <ul class="fixed-menu">
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link fixed-menu__link--active"></a>
+        <a href="#" class="page1 fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" class="page2 fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" class="page3 fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" class="page4 fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" class="page5 fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" class="page6 fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" class="page7 fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" class="page8 fixed-menu__link"></a>
       </li>
     </ul>
 
@@ -1071,20 +1076,16 @@
     </div>
 
 
-    <div class="popup" id="hidden-content">
-      <h5 class="popup-title">Спасибо за заказ!</h5>
-      <a href="#" class="popup__link">закрыть</a>
-    </div>
 
-    <script src="./js/svg4everybody.js"></script>
     <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/jquery.onepage-scroll.js"></script>
+    <script src="./js/ops.js"></script>
+    <script src="./js/svg4everybody.js"></script>
     <script src="./js/jquery.bxslider.js"></script>
     <script src="./js/burger-header.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/acco.js"></script>
     <script src="./js/menu-acco.js"></script>
-    <script src="./js/jquery.fullPage.js"></script>
-    <script src="./js/ops.js"></script>
     <script src="./js/map.js"></script>
     <script src="./js/jquery.fancybox.js"></script>
     <script src="./js/fancy.js"></script>

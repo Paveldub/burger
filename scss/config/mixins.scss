@@ -40,7 +40,17 @@
 	}
 }
 
+@mixin size930 {
+	@media screen and (max-width: 930px) {
+		@content;
+	}
+}
 
+@mixin iphone6s {
+	@media screen and (max-width: 375px) {
+		@content;
+	}
+}
 
 
 
