@@ -18,8 +18,11 @@
 	left: 5%;
 	top: 5%;
 	margin-bottom: 0;
-	@include phones {
-		padding-left: 3.875rem;
+
+	@include iphone6se {
+		font-size: 4rem;
+		left: 5%;
+		top: 5%;
 	}
 }
 
@@ -87,8 +90,8 @@
 	display: none;
 	background-color: rgba(#353332, .93);
 	@include tablets {
-		opacity: 0;
-		width: 0;
+		opacity: 1;
+		width: 100%;
 	}
 }
 

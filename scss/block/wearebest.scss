@@ -140,6 +140,10 @@
 	@include tablets {
 		text-align: center;
 	}
+
+	@include iphone6se {
+		margin-bottom: 0;
+	}
 }
 
 .text__descript p {

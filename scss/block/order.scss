@@ -381,11 +381,6 @@ textarea:focus {
 	margin-right: rem(10px);
 	flex-shrink: 0;
 	cursor: pointer;
-
-	@include phones {
-		width: 1.1rem;
-		height: 1.1rem;
-	}
 }
 
 .form__radio-img:after {
@@ -455,13 +450,14 @@ textarea:focus {
 	background-image: url('../img/content/box1.png');
 	width: rem(15px);
 	height: rem(15px);
-	left: rem(2px);
-	top: 0.18rem;
+	left: -38%;
+	top: -32%;
+	transform: translate(50%, 50%);
 	background-repeat: no-repeat;
 	opacity: 0;
 }
 
-.form__checkbox-button:checked+.form__img:after {
+.form__checkbox-button:checked + .form__img:after {
 	opacity: 1;
 	transition: all .3s;
 }
@@ -503,7 +499,7 @@ textarea:focus {
 	}
 
 	@include size930 {
-		flex-direction: column;
+
 	}
 
 	@include iphone6s {
@@ -516,5 +512,9 @@ textarea:focus {
 	top: 100%;
 	left: 50%;
 	color: #fff;
+	@include tablets {
+		top: 100%;
+		left: 0;
+	}
 }
 

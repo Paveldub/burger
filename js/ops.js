@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $(".maincontent").onepage_scroll({
         sectionContainer: ".section",
-        easing: "ease",
-        animationTime: 700,
+        easing: "ease-in-out",
+        animationTime: 1000,
         
         loop: false,
         pagination: false,
@@ -47,4 +47,9 @@ $(document).ready(function () {
         e.preventDefault();
         $(".maincontent").moveDown();
     });
+    $('.order-link').on('click', function(e) {
+        e.preventDefault();
+        $(".maincontent").moveTo(7);
+    })
 });
+

@@ -52,5 +52,11 @@
 	}
 }
 
+@mixin iphone6se {
+	@media screen and (max-width: 667px) {
+		@content;
+	}
+}
+
 
 

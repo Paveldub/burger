@@ -67,11 +67,14 @@
 	@include phones {
 		margin-right: rem(30px);
 	}
+
+	@include iphone {
+		margin-right: 3.875rem;
+	}
 }
 
 .nav__list {
 	display: flex;
-	margin-bottom: rem(-2px);
 }
 
 .nav__items {
@@ -128,16 +131,35 @@
 
 // burger container-start
 .header__burger-btn {
+	position: fixed;
+	top: 4%;
+	left: 95%;
+	z-index: 100;
+	overflow: hidden;
+
+	
 	@include tablets {
 		cursor: pointer;
 		z-index: 100;
+		left: 95%;
+		top: 3.5%;
+
+		@include iphone6se {
+			left: 91%;
+		}
+
+		@include iphone {
+			left: 88%;
+			top: 3%;
+		}
 	
 		&.header__burger-btn--active {
-			opacity: .7;
+			opacity: .9;
 	
 			.header__burger-item--top {
 				transform: translateY(9px) translateX(0) rotate(45deg);
 				transition: all .5s;
+				background: #f9b43b;
 			}
 	
 			.header__burger-item--middle {
@@ -148,6 +170,7 @@
 			.header__burger-item--bottom {
 				transform: translateY(-9px) translateX(0) rotate(-45deg);
 				transition: all .5s;
+				background: #f9b43b;
 			}
 		}
 	
@@ -204,13 +227,15 @@
 .overlay-menu {
 	@include tablets {
 		position: absolute;
-		height: 70%;
+		height: 50%;
 		left: 50%;
 		top: 50%;
+		width: 100%;
 		transform: translate(-50%, -50%);
-		font-size: 50px;
+		font-size: 19px;
 		font-weight: 400;
 		text-align: center;
+		@include ubuntu();
 	}
 }
 
@@ -251,6 +276,7 @@
 		text-transform: uppercase;
 		font-size: 24px;
 		@include ubuntu();
+		margin-top: 10px;
 	}
 }
 

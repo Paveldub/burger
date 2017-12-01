@@ -8,6 +8,7 @@ let menu = (function(options) {
         button.classList.toggle('header__burger-btn--active');
         menu.classList.toggle('overlay--active');
         body.classList.toggle('body--active');
+        
       }
     
       let addListeners = function() {
@@ -21,8 +22,14 @@ let menu = (function(options) {
       button: '#toggle',
       menu: '#overlay'
     });
+  
     
     menu.init();
+
+    $('.overlay-menu__link').click(function(e){  
+      e.preventDefault();
+       $('.overlay').removeClass('overlay--active');    
+     });
     
     // $('#toggle').click(function() {
     //   $(this).toggleClass('button_container--active');
