@@ -1203,8 +1203,8 @@ body.fancybox-iosfix {
   left: 0;
   right: 0;
   padding: 60px 2vw 0 2vw;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(40%, rgba(0, 0, 0, 0.2)), color-stop(80%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.8)));
   background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.8) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(40%, rgba(0, 0, 0, 0.2)), color-stop(80%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.8)));
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.8) 100%);
   pointer-events: none; }
 
@@ -1643,13 +1643,13 @@ li.fancybox-thumbs-loading {
   @media screen and (max-width: 768px) {
     .header__btn {
       margin-left: auto;
-      margin-right: 1.875rem; } }
+      margin-right: 0.875rem; } }
   @media screen and (max-width: 480px) {
     .header__btn {
-      margin-right: 1.875rem; } }
+      margin-right: 0.875rem; } }
   @media screen and (max-width: 320px) {
     .header__btn {
-      margin-right: 3.875rem; } }
+      margin-right: 0.875rem; } }
 
 .nav__list {
   display: -webkit-box;
@@ -3000,8 +3000,8 @@ li.fancybox-thumbs-loading {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(47%, #eb8c38), color-stop(73%, #f9b43b));
   background: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(47%, #eb8c38), color-stop(73%, #f9b43b));
   background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4073,5 +4073,4 @@ input:focus {
     .sent {
       top: 100%;
       left: 0; } }
-
 /*# sourceMappingURL=main.css.map */

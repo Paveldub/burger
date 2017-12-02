@@ -62,14 +62,14 @@
 	margin-left: rem(15px);
 	@include tablets {
 		margin-left: auto;
-		margin-right: rem(30px);
+		margin-right: 0.875rem;
 	}
 	@include phones {
-		margin-right: rem(30px);
+		margin-right: 0.875rem;
 	}
 
 	@include iphone {
-		margin-right: 3.875rem;
+		margin-right: 0.875rem;
 	}
 }
 
