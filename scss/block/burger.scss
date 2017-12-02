@@ -131,7 +131,6 @@
 
 // burger container-start
 .header__burger-btn {
-	position: fixed;
 	top: 4%;
 	left: 95%;
 	z-index: 100;
@@ -205,17 +204,17 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 0%;
+	height: 0;
 	opacity: 0;
 	min-width: 320px;
 	visibility: hidden;
 	transition: opacity .35s, visibility .35s, height .35s;
 	overflow: hidden;
-	z-index: 5;
+	z-index: 99;
 	&.overlay--active {
 		opacity: .99;
 		visibility: visible;
-		height: 100%;
+		height: 800%;
 		.overlay-menu__item {
 			animation: fadeInRight .5s ease forwards;
 			animation-delay: .35s;
@@ -229,7 +228,7 @@
 		position: absolute;
 		height: 50%;
 		left: 50%;
-		top: 50%;
+		top: 29%;
 		width: 100%;
 		transform: translate(-50%, -50%);
 		font-size: 19px;
