@@ -5,21 +5,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNebg96x85zZyZAT4LGdFhQBHKNxqDruE&callback=initMap" async
     defer></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="shortcut icon" href="./img/content/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/onepage-scroll.css">
-    <link rel="stylesheet" href="./css/lightcase.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.css">
+    <link rel="stylesheet" href="./css/main.css">
   <title>Burger Master</title>
 </head>
 
 <body body--active>
-
   <div class="wrapper">
     <div class="maincontent">
-
       <section class="section burger hero">
         <div class="container burger__container">
           <header class="header">
@@ -59,7 +59,6 @@
                 <span class="header__burger-item header__burger-item--bottom"></span>
               </div>
           </header>
-
           <div class="content">
             <div class="content__burger">
               <img src="img/content/burger.png" alt="burger-img" class="content__img">
@@ -964,7 +963,8 @@
                   </div>
                   <div class="form__btns">
                     <div class="form-button form-button-margin">
-                      <button type="submit" class="form-button__style" data-rel="lightcase">заказать</button>
+                  <!-- <button type="submit" class="form-button__style">заказать</button> -->
+                    <a href="#" class="form-button__style">заказать</a>
                     </div>
                     <div class="form__trans-btn">
                       <button type="reset" class="form__transp">Очистить</button>
@@ -1132,8 +1132,8 @@
     <script src="./js/menu-acco.js"></script>
     <script src="./js/map.js"></script>
     <script src="./js/form.js"></script>
-    <script src="./js/lightcase.js"></script>
-    <script scr="./js/popup__order.js"></script>
+    <script src="./js/jquery.fancybox.js"></script>
+    <script src="./js/modal__dialog.js"></script>
 </body>
 
 </html>

@@ -242,17 +242,20 @@ textarea:focus {
 }
 
 .form__transp {
-	color: #a4a4a4;
+	color: #fff;
 	text-decoration: none;
-	padding: rem(13px) rem(13px);
+	padding: rem(10px) rem(10px);
 	width: rem(100px);
 	transition: all .3s;
 	background-color: transparent;
-	border: none;
+	border: 2px solid #e35028;
+	border-radius: rem(6px);
 	font-size: rem(14px);
 	font-weight: 400;
 	@include ubuntu();
 	cursor: pointer;
+	outline: none;
+
 	&:hover {
 		color: #e35028;
 		transition: all .3s;
@@ -270,9 +273,11 @@ textarea:focus {
 	text-transform: uppercase;
 	transition: .6s;
 	font-weight: 500;
+	margin-right: rem(10px);
 	display: inline-block;
 	cursor: pointer;
 	border: none;
+	outline: none;
 	&:hover {
 		background-color: darken($corange, 7%);
 	}
