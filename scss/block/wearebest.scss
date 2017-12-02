@@ -3,6 +3,9 @@
 	display: flex;
 	flex-direction: column;
 	width: 95%;
+	text-align: center;
+	height: 100%;
+	justify-content: center;
 }
 
 .wearebest {
@@ -33,13 +36,12 @@
 }
 
 .best-title {
-	display: flex;
-	justify-content: center;
 	align-items: center;
 	font-size: rem(72px);
 	@include gagalin();
 	padding-bottom: rem(50px);
 	margin: 0;
+	text-shadow: 3px 6px 3px rgba(148, 150, 150, 0.64);
 
 	@include tablets {
 		display: flex;

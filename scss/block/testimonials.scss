@@ -101,6 +101,10 @@
 	width: rem(130px);
 	background-color: #2f3234;
 	border-radius: rem(6px);
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	
 	&:hover {
 		background-color: darken(#e45028, 10%);
 	}
@@ -127,4 +131,14 @@
 	position: absolute;
 	top: 0;
 	left: rem(-9999px);
+}
+
+.popup {
+	display: none;
+	text-align: center;
+	width: rem(300px);
+}
+
+.popup p {
+	margin-bottom: 15px;
 }

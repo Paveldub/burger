@@ -1203,8 +1203,8 @@ body.fancybox-iosfix {
   left: 0;
   right: 0;
   padding: 60px 2vw 0 2vw;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(40%, rgba(0, 0, 0, 0.2)), color-stop(80%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.8)));
   background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.8) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(40%, rgba(0, 0, 0, 0.2)), color-stop(80%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.8)));
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.8) 100%);
   pointer-events: none; }
 
@@ -2650,7 +2650,12 @@ li.fancybox-thumbs-loading {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 95%; }
+  width: 95%;
+  text-align: center;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .wearebest {
   background-image: url("../img/background/bg-tomato.png");
@@ -2694,19 +2699,14 @@ li.fancybox-thumbs-loading {
   padding: 5rem 0 5.625rem; }
 
 .best-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 4.5rem;
   font-family: 'gagalin', Helvetica, sans-serif;
   padding-bottom: 3.125rem;
-  margin: 0; }
+  margin: 0;
+  text-shadow: 3px 6px 3px rgba(148, 150, 150, 0.64); }
   @media screen and (max-width: 768px) {
     .best-title {
       display: -webkit-box;
@@ -2971,7 +2971,10 @@ li.fancybox-thumbs-loading {
   border: 0.0625rem solid #2f3234;
   width: 8.125rem;
   background-color: #2f3234;
-  border-radius: 0.375rem; }
+  border-radius: 0.375rem;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer; }
   .review__btn:hover {
     background-color: #c13c18; }
   @media screen and (max-width: 768px) {
@@ -2993,6 +2996,14 @@ li.fancybox-thumbs-loading {
   top: 0;
   left: -624.9375rem; }
 
+.popup {
+  display: none;
+  text-align: center;
+  width: 18.75rem; }
+
+.popup p {
+  margin-bottom: 15px; }
+
 .burger-slider {
   width: 100%;
   height: 100%;
@@ -3000,8 +3011,8 @@ li.fancybox-thumbs-loading {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(47%, #eb8c38), color-stop(73%, #f9b43b));
   background: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(47%, #eb8c38), color-stop(73%, #f9b43b));
   background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3010,6 +3021,12 @@ li.fancybox-thumbs-loading {
       -ms-flex-align: center;
           align-items: center;
   position: relative; }
+
+.container-slider {
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 @media screen and (max-width: 768px) {
   .content {
@@ -3256,6 +3273,12 @@ li.fancybox-thumbs-loading {
       top: 32%;
       left: 22%; } }
 
+.burger__nutrition-1200 {
+  top: 84%; }
+  @media screen and (max-width: 768px) {
+    .burger__nutrition-1200 {
+      top: 29%; } }
+
 .burger__img {
   max-width: 100%; }
 
@@ -3286,7 +3309,8 @@ li.fancybox-thumbs-loading {
   color: #fff;
   line-height: 1;
   padding-bottom: 3.125rem;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  text-shadow: 4px 6px 3px rgba(0, 0, 0, 0.64); }
   @media screen and (max-width: 768px) {
     .burger__title {
       padding-bottom: 0;
@@ -3322,13 +3346,15 @@ li.fancybox-thumbs-loading {
   font-family: 'gagalin', Helvetica, sans-serif;
   font-size: 4.5rem;
   color: #e35028;
-  padding-right: 0.625rem; }
+  padding-right: 0.625rem;
+  text-shadow: 4px 6px 3px rgba(0, 0, 0, 0.64); }
 
 .burger__ruble {
   font-family: 'gagalin', Helvetica, sans-serif;
   font-size: 1.875rem;
   color: #e35028;
-  padding-right: 1.875rem; }
+  padding-right: 1.875rem;
+  text-shadow: 4px 6px 3px rgba(0, 0, 0, 0.64); }
 
 .burger__arrow-left {
   position: absolute;
@@ -3348,7 +3374,7 @@ li.fancybox-thumbs-loading {
       left: 0; } }
   @media screen and (max-width: 667px) {
     .burger__arrow-left {
-      top: 60%;
+      top: 50%;
       left: 0%; } }
 
 .burger__arrow-right {
@@ -3369,7 +3395,7 @@ li.fancybox-thumbs-loading {
       right: 0%; } }
   @media screen and (max-width: 667px) {
     .burger__arrow-right {
-      top: 60%;
+      top: 50%;
       right: 0%; } }
 
 .burger__compound {
@@ -3593,11 +3619,16 @@ li.fancybox-thumbs-loading {
     .order__title {
       text-align: center; } }
 
-@media screen and (max-width: 320px) {
-  .container-order {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; } }
+.container-order {
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media screen and (max-width: 320px) {
+    .container-order {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .form__title {
   color: #fff;
@@ -4033,10 +4064,6 @@ input:focus {
   -o-transition: all .3s;
   transition: all .3s; }
 
-.popup {
-  display: none;
-  text-align: center; }
-
 .form-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4093,5 +4120,4 @@ input:focus {
     .sent {
       top: 100%;
       left: 0; } }
-
 /*# sourceMappingURL=main.css.map */

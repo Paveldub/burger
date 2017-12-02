@@ -47,6 +47,8 @@
 }
 
 .container-order {
+	height: 100%;
+	justify-content: center;
 	@include iphone {
 		align-items: center;
 	}
@@ -489,10 +491,7 @@ textarea:focus {
 
 // modal window
 
-.popup {
-	display: none;
-	text-align: center;
-}
+
 
 
 .form-flex {
