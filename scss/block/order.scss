@@ -310,11 +310,29 @@ textarea:focus {
 }
 
 .fancybox-slide > * {
-	padding: rem(30px);
-	border-radius: rem(7px);
-	border: 1px solid #e45028;
-	margin: 0;
-	background: #1E1E1E;
+
+	border: 2spx solid #e45028;
+
+}
+
+.popup__link-button {
+	padding: rem(10px) rem(15px);
+	border-radius: rem(5px);
+	background-color: $corange;
+	text-decoration: none;
+	color: $cwhite;
+	font-size: rem(13px);
+	text-transform: uppercase;
+	transition: .6s;
+	font-weight: 500;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+}
+
+.popup__text {
+	@include lifehack();
+	font-weight: 300;
 }
 
 .form-button-margin {

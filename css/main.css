@@ -1203,8 +1203,8 @@ body.fancybox-iosfix {
   left: 0;
   right: 0;
   padding: 60px 2vw 0 2vw;
-  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.8) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, rgba(0, 0, 0, 0.1)), color-stop(40%, rgba(0, 0, 0, 0.2)), color-stop(80%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.8)));
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.8) 100%);
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.8) 100%);
   pointer-events: none; }
 
@@ -3000,8 +3000,8 @@ li.fancybox-thumbs-loading {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  background: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
   background: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(47%, #eb8c38), color-stop(73%, #f9b43b));
+  background: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
   background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3859,11 +3859,27 @@ input:focus {
   height: 0; }
 
 .fancybox-slide > * {
-  padding: 1.875rem;
-  border-radius: 0.4375rem;
-  border: 1px solid #e45028;
-  margin: 0;
-  background: #1E1E1E; }
+  border: 2spx solid #e45028; }
+
+.popup__link-button {
+  padding: 0.625rem 0.9375rem;
+  border-radius: 0.3125rem;
+  background-color: #e45028;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+  font-weight: 500;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center; }
+
+.popup__text {
+  font-family: 'lifehack', Helvetica, sans-serif;
+  font-weight: 300; }
 
 .form-button-margin {
   margin-left: 0; }
@@ -4077,4 +4093,5 @@ input:focus {
     .sent {
       top: 100%;
       left: 0; } }
+
 /*# sourceMappingURL=main.css.map */
