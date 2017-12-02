@@ -108,16 +108,16 @@ function initMap() {
     let icons = {
         position: {
             icon: {
-                url: 'https://maxorel.github.io/assets/img/icon/map-marker.svg',
+                url: './img/icons-svg/map-marker.svg',
                 size: new google.maps.Size(60, 60),
                 scaledsize: new google.maps.Size(60, 60)
             }
         },
         logo: {
             icon: {
-                url: 'https://maxorel.github.io/assets/img/icon/map-marker.svg',
-                size: new google.maps.Size(90, 90),
-                scaledsize: new google.maps.Size(90, 90)
+                url: './img/icons-svg/map-marker.svg',
+                size: new google.maps.Size(60, 60),
+                scaledsize: new google.maps.Size(60, 60)
             }
         }
     };
