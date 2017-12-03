@@ -12,3 +12,8 @@ $(document).ready(function () {
         slider.goToPrevSlide();
     });
 });
+
+$('.burger__link').on('click', function(e){
+    e.preventDefault();
+    $('.maincontent').moveTo(7);
+})

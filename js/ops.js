@@ -47,9 +47,5 @@ $(document).ready(function () {
         e.preventDefault();
         $(".maincontent").moveDown();
     });
-    $('.order-link').on('click', function(e) {
-        e.preventDefault();
-        $(".maincontent").moveTo(7);
-    })
 });
 

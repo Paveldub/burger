@@ -26,9 +26,14 @@ let menu = (function(options) {
     
     menu.init();
 
-    $('.overlay-menu__link').click(function(e){  
+    $('.overlay-menu__link').on('click', function(e){  
       e.preventDefault();
        $('.overlay').removeClass('overlay--active');    
+     });
+
+     $('.order-link').on('click', function(e) {
+      e.preventDefault();
+      $('.maincontent').moveTo(7);
      });
     
     // $('#toggle').click(function() {

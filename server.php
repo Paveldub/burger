@@ -28,8 +28,6 @@ $credit = isset($credit) ? 'НЕТ' : 'ДА';
 
 $mail__message = "
 
-
-
 Имя: . $name . 
 Номер телефона: . $phone .
 Улица:  . $street . 
@@ -41,8 +39,6 @@ $mail__message = "
 Сдача:  .  $change .
 Кредитная карта:  . $card . 
 Перезванивать: .  $disturb . 
-
-
 
 ";
 
